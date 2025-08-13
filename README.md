@@ -2,6 +2,6 @@
 
 * test
 
-| özellik | ahmet | mehmet |
-|:-----:|:-----|-----:|
+| deneme | deneme | deneme | ali |
+|:-----:|:-----|-----:|-----:|
 | yaş| 19| 15 |
