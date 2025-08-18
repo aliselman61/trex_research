@@ -10,3 +10,7 @@
 * GitHub bir Git sunucusudur. Git ile depolanmış kodların host'lanabildiği bir uzak bilgisayar, bir nevi buluttur. GitLab, Gitea, Bitbucket, Gogs gibi farklı Git sunucuları da mevcuttur. Şu anda yazılımcılar arasında en popüler olanı GitHub'dır.
 
 </details>
+
+<details>
+<summary`>Temel Git komutları: init, clone, add, commit, push, pull, branch, merge</summary>
+
