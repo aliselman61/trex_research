@@ -5,7 +5,7 @@
 
 <details>
 <summary> Git nedir? GitHub nedir
-
+ deneme 1
 <summary> Temel Git komutları: init, clone, add, commit, push, pull, branch, merge
   
 <summary> Merge conflict nedir, nasıl çözülür?
