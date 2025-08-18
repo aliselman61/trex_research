@@ -1,7 +1,3 @@
-# trex_research
-
-* test
-
-| deneme | deneme | deneme | ali |
-|:-----:|:-----|-----:|-----:|
-| yaş| 19| 15 |
+#deneme
+##deneme2
+###deneme3
