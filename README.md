@@ -8,7 +8,7 @@
   
 * Kısaca anlatmak gerekirse yazılım geliştirme dünyasında projelerin büyümesiyle birlikte
   
-* 
+* 2
 
-*
+* 3
  
