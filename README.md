@@ -4,10 +4,10 @@
 ## 1. Modern Yazılım Geliştirme Pratikleri
 
 <details>
-<summary> Git nedir? GitHub nedir
+<summary>Git nedir? GitHub nedir</summary>
  
-<summary> Temel Git komutları: init, clone, add, commit, push, pull, branch, merge
+Temel Git komutları: init, clone, add, commit, push, pull, branch, merge
   
-<summary> Merge conflict nedir, nasıl çözülür?
+Merge conflict nedir, nasıl çözülür?
   
-<summary> CI/CD nedir? Azure DevOps, GitHub Actions ile pipeline örnekleri
+CI/CD nedir? Azure DevOps, GitHub Actions ile pipeline örnekleri
