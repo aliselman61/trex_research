@@ -6,10 +6,7 @@
   <details>
   <summary>Git nedir? GitHub nedir</summary>
   
- 
-* Yazılım geliştirme dünyasında projelerin büyümesiyle birlikte
-  
-* 
+* Kısaca anlatmak gerekirse yazılım geliştirme dünyasında projelerin büyümesiyle birlikte
   
 * 
 
