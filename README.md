@@ -11,3 +11,4 @@
 * Merge conflict nedir, nasıl çözülür?
   
 * CI/CD nedir? Azure DevOps, GitHub Actions ile pipeline örnekleri
+ </details>
