@@ -22,4 +22,12 @@
 
 *  Ekip çalışmasını kolaylaştırmak için issue tracking (sorun takibi), pull request (katkı önerisi), GitHub Actions (otomasyon) gibi ek özellikler sunar.
  
+* GitHub ise Git’in üzerine kurulmuş bulut tabanlı bir platformdur.
+
+* Git reposunu internette saklamaya yarar.
+
+* Açık kaynak projelerin paylaşımı için en çok kullanılan sistemdir.
+
+* Ekip çalışmasını kolaylaştırmak için issue tracking (sorun takibi), pull request (katkı önerisi), GitHub Actions (otomasyon) gibi ek özellikler sunar.
+
 
