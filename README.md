@@ -20,6 +20,6 @@
 
 * Açık kaynak projelerin paylaşımı için en çok kullanılan sistemdir.
 
-*  Ekip çalışmasını kolaylaştırmak için issue tracking (sorun takibi), pull request (katkı önerisi), GitHub Actions (otomasyon) gibi ek özellikler suna
+*  Ekip çalışmasını kolaylaştırmak için issue tracking (sorun takibi), pull request (katkı önerisi), GitHub Actions (otomasyon) gibi ek özellikler sunar.
  
 
