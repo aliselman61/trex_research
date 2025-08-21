@@ -50,7 +50,7 @@
  git clone https://github.com/kullanici/proje.git
 
 
- Bu komut sayesinde uzak depodaki tüm geçmiş commit’ler, branch’ler ve dosyalar yerel bilgisayara aktarılır.
+ Bu komut sayesinde uzak depodaki tüm geçmiş commitler, branchler ve dosyalar yerel bilgisayara aktarılır.
 
 *  git add
 
