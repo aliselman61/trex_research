@@ -30,7 +30,7 @@
 
 * Ekip çalışmasını kolaylaştırmak için issue tracking (sorun takibi), pull request (katkı önerisi), GitHub Actions (otomasyon) gibi ek özellikler sunar.
 
-* 1. git init
+*  git init
 
  Yeni bir Git deposu oluşturmak için kullanılır. Bir proje klasöründe git init komutu çalıştırıldığında, o klasör artık Git tarafından izlenmeye başlar. Bu sayede proje içerisinde yapılan her değişiklik Git tarafından kayıt altına    alınabilir.
 
@@ -41,7 +41,7 @@
 
  Bu komut çalıştırıldığında klasörde .git isimli gizli bir dosya oluşur ve bu dosya projenin tüm sürüm kontrol bilgilerini içerir.
 
-* 2. git clone
+*  git clone
 
  Var olan bir uzak Git deposunu bilgisayara kopyalamak için kullanılır. Özellikle GitHub üzerindeki projelerin yerel ortama indirilmesinde tercih edilir.
 
@@ -52,7 +52,7 @@
 
  Bu komut sayesinde uzak depodaki tüm geçmiş commit’ler, branch’ler ve dosyalar yerel bilgisayara aktarılır.
 
-* 3. git add
+*  git add
 
  Dosyaları staging area (hazırlık alanı) denilen bölgeye ekler. Bu alan, commit işleminden önce değişikliklerin hazırlanmasını sağlar.
 
@@ -64,7 +64,7 @@
 
  İlk komut sadece belirli bir dosyayı, ikincisi ise proje içindeki tüm değişiklikleri staging alanına ekler.
 
-* 4. git commit
+*  git commit
 
  Staging alanındaki dosyaları kalıcı olarak kaydeder. Commit işlemi, yapılan değişikliklere bir “anlık görüntü” almak gibidir. Her commit, açıklayıcı bir mesajla etiketlenmelidir.
 
@@ -75,7 +75,7 @@
 
  Bu komut, yapılan değişikliklerin tarihçede anlamlı şekilde tutulmasına yardımcı olur.
 
-* 5. git push
+*  git push
 
  Yerelde yapılan commit’lerin uzak depoya (örneğin GitHub’a) gönderilmesini sağlar. Böylece proje ekibinin diğer üyeleri de güncellenmiş koda erişebilir.
 
@@ -86,7 +86,7 @@
 
  Bu komut, değişiklikleri origin isimli uzak depodaki main branch’ine gönderir.
 
-* 6. git pull
+*  git pull
 
  Uzak depodaki en güncel değişiklikleri indirip mevcut branch ile birleştirmeye yarar. Bu komut, ekip çalışmasında başkalarının yaptığı güncellemeleri almak için sıkça kullanılır.
 
@@ -97,7 +97,7 @@
 
  Böylece uzak depodaki main branch’indeki tüm yeni değişiklikler yerel bilgisayara aktarılır.
 
-* 7. git branch
+*  git branch
 
  Proje üzerinde dallar (branch) oluşturmaya, görüntülemeye veya yönetmeye yarar. Branch’ler, geliştiricilerin aynı proje üzerinde farklı özellikler geliştirmesini sağlar.
 
@@ -110,7 +110,7 @@
 
  Branch kullanımı, aynı projede bağımsız geliştirmelerin çakışmadan yapılabilmesine imkân verir.
 
- 8. git merge
+*  git merge
 
  İki farklı branch’i birleştirmek için kullanılır. Örneğin, yeni-ozellik branch’inde geliştirilen bir özellik tamamlandığında, bu branch main ile birleştirilir.
 
