@@ -31,6 +31,7 @@
 * Ekip çalışmasını kolaylaştırmak için issue tracking (sorun takibi), pull request (katkı önerisi), GitHub Actions (otomasyon) gibi ek özellikler sunar.
   
 <details>
+  
 <summary>Temel Git komutları: init, clone, add, commit, push, pull, branch, merge</summary>
 
 *  git init
