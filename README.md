@@ -35,7 +35,7 @@
  Yeni bir Git deposu oluşturmak için kullanılır. Bir proje klasöründe git init komutu çalıştırıldığında, o klasör artık Git tarafından izlenmeye başlar. Bu sayede proje içerisinde yapılan her değişiklik Git tarafından kayıt altına    alınabilir.
 
  Örnek kullanım:
-
+ 
  git init
 
 
@@ -121,3 +121,9 @@
 
 
  Bu komutlar sayesinde yeni-ozellik branch’indeki değişiklikler main branch’ine eklenmiş olur. Eğer aynı satırlarda çakışan değişiklikler varsa merge conflict oluşabilir ve manuel çözüm gerekir.
+
+
+
+
+
+ 
