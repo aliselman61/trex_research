@@ -26,11 +26,12 @@
 
 * Git reposunu internette saklamaya yarar.
 
-* Açık kaynak projelerin paylaşımı için en çok kullanılan sistemdir.
+* Açık kaynak projelerin paylaşımı<in en çok kullanılan sistemdir.
 
 * Ekip çalışmasını kolaylaştırmak için issue tracking (sorun takibi), pull request (katkı önerisi), GitHub Actions (otomasyon) gibi ek özellikler sunar.
-
-<summary>•	Temel Git komutları: init, clone, add, commit, push, pull, branch, merge</summary>
+  
+<details>
+<summary>Temel Git komutları: init, clone, add, commit, push, pull, branch, merge</summary>
 
 *  git init
 
