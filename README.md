@@ -125,7 +125,7 @@
  git merge yeni-ozellik
 
 
- Bu komutlar sayesinde yeni-ozellik branch’indeki değişiklikler main branch’ine eklenmiş olur. Eğer aynı satırlarda çakışan değişiklikler varsa merge conflict oluşabilir ve manuel çözüm gerekir.
+ Bu komutlar sayesinde yeni-ozellik branch’indeki değişiklikler main branch’ine eklenmiş olur. Eğer aynı    çakışan değişiklikler varsa merge conflict oluşabilir ve manuel çözüm gerekir.
 
 </details>
 
