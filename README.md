@@ -130,5 +130,5 @@
 
 </details>
 
-
+Merge conflict nedir, nasıl çözülür?
  
