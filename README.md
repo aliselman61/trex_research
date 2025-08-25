@@ -127,8 +127,11 @@
 
  Bu komutlar sayesinde yeni-ozellik branch’indeki değişiklikler main branch’ine eklenmiş olur. Eğer aynı satırlarda çakışan değişiklikler varsa merge conflict oluşabilir ve manuel çözüm gerekir.
 
-
 </details>
 
-Merge conflict nedir, nasıl çözülür?
- 
+
+<details>
+ <summary>Merge conflict nedir, nasıl çözülür?</summary>
+
+  
+ </details>
