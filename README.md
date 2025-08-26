@@ -141,7 +141,7 @@ Merge conflict Git’te iki dal aynı dosyanın aynı bölümünü farklı şeki
   
 <summary>CI/CD nedir? Azure DevOps, GitHub Actions ile pipeline örnekleri </summary>
 
-CI/CD Nedir? Azure DevOps ve GitHub Actions ile pipeline Örnekleri
+
 * CI/CD Nedir?
 
 CI/CD, yazılım geliştirme süreçlerinde kaliteyi artıran ve teslimat hızını yükselten bir yöntemdir.
