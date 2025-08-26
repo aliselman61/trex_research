@@ -259,4 +259,12 @@ Restore, build ve test adımları gerçekleştirilir.
 
 </details>
 
+ <details>     
  
+ <summary>Ek Maddeler</summary>
+
+
+
+ 
+ 
+ </details>
