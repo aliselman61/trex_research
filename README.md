@@ -275,8 +275,17 @@ SDLC Aşamaları (Yazılım Geliştirme Yaşam Döngüsü)
 
 * Dağıtım 
 
-* Bakım 
- 
+* Bakım
+  
+Metodolojiler
+
+Agile → Esnek, hızlı geri bildirim.
+
+Scrum → Sprint (2-4 hafta), roller (PO, SM, Dev Team).
+
+Kanban → İş akışı panosu (To Do → Doing → Done).
+
+
  </details>
  
 ## 2. .NET Ekosistemi
