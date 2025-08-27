@@ -263,9 +263,19 @@ Restore, build ve test adımları gerçekleştirilir.
  
  <summary>Ek Maddeler</summary>
 
+SDLC Aşamaları (Yazılım Geliştirme Yaşam Döngüsü)
 
+* Planlama 
 
- 
+* Analiz 
+
+* Geliştirme 
+
+* Test 
+
+* Dağıtım 
+
+* Bakım 
  
  </details>
  
