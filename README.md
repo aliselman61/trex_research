@@ -277,7 +277,7 @@ SDLC Aşamaları (Yazılım Geliştirme Yaşam Döngüsü)
 
 * Bakım
   
-Metodolojiler
+* Metodolojiler
 
 Agile → Esnek, hızlı geri bildirim.
 
