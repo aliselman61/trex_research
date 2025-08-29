@@ -290,3 +290,12 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
  
 ## 2. .NET Ekosistemi
 
+<details>
+
+<summary>.NET nedir? Tarihçesi amacı,neden kullanılır?</summary>
+
+.NET Core, Windows, Linux ve MacOS için yazılım uygulamaları oluşturmak için kullanılabilecek genel amaçlı bir framework’dür. Diğer yazılımların aksine .NET Core, web uygulamaları, mobil uygulamalar, masaüstü uygulamaları, bulut hizmetleri, microservisler, API’ler, oyunlar ve IoT uygulamaları dahil olmak üzere her türlü uygulama/yazılımı oluşturmak için kullanılabilir. Diğer framework’lerden farklı olarak .NET Core, tek bir programlama diliyle sınırlı değildir ve C#, VB.NET, F#, XAML ve TypeScript’i destekler. Bu programlama dilleri açık kaynak kodludur ve bağımsız topluluklar tarafından yönetilir.
+
+.NET Core en gelişmiş, olgun ve kapsamlı class library’leri, ortak API’leri, çoklu dil desteğini ve araçları sunmaktadır. Visual Studio ve Visual Studio Core, .NET Core’u geliştiriciler için en üretken platformlardan biri yapan en gelişmiş ve modern geliştirici IDE’leridir
+
+</details>
