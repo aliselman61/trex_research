@@ -298,35 +298,14 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
 
 .NET Core en gelişmiş, olgun ve kapsamlı class library’leri, ortak API’leri, çoklu dil desteğini ve araçları sunmaktadır. Visual Studio ve Visual Studio Core, .NET Core’u geliştiriciler için en üretken platformlardan biri yapan en gelişmiş ve modern geliştirici IDE’leridir
 
-import matplotlib.pyplot as plt
+2002: .NET Framework 1.0 çıktı, C# tanıtıldı (sadece Windows).
 
-# Veriler
-years = [2002, 2005, 2016, 2020, 2023]
-events = [
-    ".NET Framework 1.0\n(C# ile çıktı)",
-    "Framework 2.0–4.5\n(Generics, LINQ, Async/Await)",
-    ".NET Core 1.0\n(Açık kaynak, Cross-platform)",
-    ".NET 5\n(Tek çatı birleşme)",
-    ".NET 8\n(Günümüz: Modern, hızlı, çoklu platform)"
-]
+2005–2015: Framework 2.0–4.5 arasında LINQ, Async/Await gibi büyük yenilikler geldi.
 
-# Grafik oluşturma
-plt.figure(figsize=(10, 4))
-plt.hlines(1, years[0], years[-1], colors="lightgray", linewidth=2)
-plt.scatter(years, [1]*len(years), color="royalblue", s=200, zorder=3)
+2016: .NET Core yayınlandı → Açık kaynak, hızlı, platform bağımsz.
 
-# Etiketler
-for i, (year, event) in enumerate(zip(years, events)):
-    plt.text(year, 1.05 if i % 2 == 0 else 0.85, f"{year}\n{event}",
-             ha="center", va="center", fontsize=9, rotation=0)
+2020: .NET 5 ile Framework ve Core birleşti, tek çatı oldu.
 
-# Stil
-plt.gca().axes.get_yaxis().set_visible(False)
-plt.gca().axes.get_xaxis().set_visible(False)
-plt.title(".NET Tarihçesi Zaman Çizelgesi", fontsize=12, weight="bold")
-plt.tight_layout()
-
-plt.show()
-
+2023+: .NET 8  Modern, çoklu platform, yapay zekâ ve bulut odaklı.
 
 </details>
