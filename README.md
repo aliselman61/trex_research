@@ -308,6 +308,7 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
 
 2023+: .NET 8  Modern, çoklu platform, yapay zekâ ve bulut odaklı.
 
+</details>
 
 <summary>  .NET Framework, .NET Core ve .NET 7/8+ farkları  </summary>
 
@@ -323,4 +324,3 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
 
 
 
-</details>
