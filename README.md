@@ -349,7 +349,7 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
 
   Core = Açık kaynak, cross-platform, hız odaklı.
 
-.NET 7/8+ = Birleşik, modern, her yerde çalışan ve geleceğe dönük.
+<summary>.NET 7/8+ = Birleşik, modern, her yerde çalışan ve geleceğe dönük.</summary>
 
 </details>
 
