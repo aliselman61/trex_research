@@ -310,10 +310,11 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
 
 </details>
 
-<summary> NET Framework, .NET Core ve .NET 7/8+ farkları</summary>
+<details>
+<summary>.NET Framework, .NET Core ve .NET 7/8+ farkları</summary>
 
 
-
+</details>
 
 
 
