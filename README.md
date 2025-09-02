@@ -410,7 +410,6 @@ global.json file:
 
 
 
-## 3.Backend Geliştirme Temelleri
 
   
 
