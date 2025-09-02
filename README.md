@@ -410,7 +410,3 @@ global.json file:
 
 
 
-
-  
-
-
