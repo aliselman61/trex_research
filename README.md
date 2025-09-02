@@ -320,7 +320,7 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
 |Kaynak kodu|Açık kaynak kodlu değil|Açık kaynak kodlu|Açık kaynak kodlu|
 |Desteklediği araçlar|Visual Studio|Visual Studio, VS Code, CLI araçları|Visual Studio, VS Code, CLI araçları|
 |Kullanım alanları|Eski Windows uygulamaları|Çoklu platform uygulamaları, Web, API, Mikroservis|Modern çoklu platform uygulamaları, Bulut, Web API ve dahası|
-|Performans|Kıyasla düşük|Ortalama|En iyi performans|
+|Performans|düşük|Orta|iyi performans|
 
 </details>
 
