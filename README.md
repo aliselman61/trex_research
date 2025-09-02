@@ -328,8 +328,6 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
 
 <summary>Senkron ve Asenkron Programlama</summary>
 
-</details>
-
 *Senkron Programlama Nedir?
 
 İşlemler ardışık olarak çalışır.
@@ -351,8 +349,6 @@ Program akışı, uzun süren işlemin bitmesini beklemek zorunda kalmaz.
 Sonuç hazır olduğunda, program o işin sonucunu alıp kaldığı yerden devam eder.
 
 *Senkron/Asenkron örnek senaryo açıklaması
-
-
 
   
 </details>
