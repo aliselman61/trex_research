@@ -364,7 +364,7 @@ Senkron programlama ile bekleme gerektiren işlemleri çağırmak, bulaşık mak
 
 ### Example output of `dotnet --info`
 
-```txt
+```
 .NET SDK:
  Version:           9.0.201
  Commit:            071aaccdc2
@@ -406,7 +406,13 @@ Environment variables:
   Not set
 
 global.json file:
-  Not found```
+  Not found
+```
+</details>
+
+
+
+  
 
 
 
