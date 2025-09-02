@@ -414,16 +414,9 @@ global.json file:
 
 <details> 
 
-<sumarry>Backend nedir? Frontend ile farkları</sumarry> 
-
-
-
-
-
-
+<sumarry> Backend nedir? Frontend ile farkları </sumarry> 
 
 
 </details>
-
 
 
