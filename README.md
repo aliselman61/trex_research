@@ -317,7 +317,7 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|
 |Platform desteği|Yalnızca Windows'ta çalışır|Platformlar arası çalışır(Linux,Windows,Mac vb.)|Platformlar arası çalışır|
 |Güncellemeler|Güncelleme almaz|Güncelleme almaz|Güncelleme almaya devam eder|
-|Kaynak kodu|Açık kaynak kodlu değil|Açık kaynak kodlu|Açık kaynak kodlu|
+|Kaynak kodu|Açık kaynak kodlu değil|Açık kaynak kodlu|Açık kaynak kodu|
 |Desteklediği araçlar|Visual Studio|Visual Studio, VS Code, CLI araçları|Visual Studio, VS Code, CLI araçları|
 |Kullanım alanları|Eski Windows uygulamaları|Çoklu platform uygulamaları, Web, API, Mikroservis|Modern çoklu platform uygulamaları, Bulut, Web API ve dahası|
 |Performans|düşük|Orta|iyi performans|
