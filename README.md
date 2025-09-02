@@ -324,7 +324,41 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
 
 </details>
 
+<details>
 
+<summary>Senkron Ve Asenkron Programlama</summary>
+
+*Senkron Programlama Nedir?
+
+İşlemler ardışık olarak çalışır.
+
+Bir işlem tamamlanmadan diğerine başlanmaz.
+
+Program akışı, her adımda bir önceki adımın sonucunu beklemek zorundadır.
+
+Eğer uzun süren bir işlem varsa (örneğin büyük bir dosyanın okunması, bir web servisinden veri çekilmesi), bu süre boyunca programın geri kalan kısmı çalışmaz, bekler.
+
+Özet: Senkron programlama, "önce bu işi bitir, sonra diğerine geç" mantığıyla çalışır.
+
+*Asenkron Programlama Nedir?
+
+İşlemler paralel veya bağımsız şekilde yürütülebilir.
+
+Bir işlem başlatılır, o işlem arka planda devam ederken program diğer işlere geçebilir.
+
+Program akışı, uzun süren işlemin bitmesini beklemek zorunda kalmaz.
+
+Sonuç hazır olduğunda, program o işin sonucunu alıp kaldığı yerden devam eder.
+
+Kısaca Asenkron programlama, "bu işi başlat, bitmesini bekleme; bu arada başka işler yap" mantığıyla çalışır.
+
+
+
+
+
+
+  
+</details>
 
 
 
