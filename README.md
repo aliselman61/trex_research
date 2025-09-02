@@ -324,7 +324,20 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
 
 </details>
 
+<details>
 
+<summary>Senkron ve Asenkron Programlama</summary>
+
+</details>
+
+
+
+
+
+
+
+  
+</details>
 
 
 
