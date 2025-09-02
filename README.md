@@ -315,7 +315,7 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
   
 |Özellik| .NET Framework   | .NET Core | .NET 7/8+  |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|
-|Platform desteği|Yalnızca Windows'ta çalışır|Platformlar arası çalışır(Linux,Windows,Mac vb.)|Platformlar arası çalışır|
+|Platform desteği|Yalnızca Windows'ta çalışır|Platformlar arası çalışır(Linux,Windows,Mac)|Platformlar arası çalışır|
 |Güncellemeler|Güncelleme almaz|Güncelleme almaz|Güncelleme almaya devam eder|
 |Kaynak kodu|Açık kaynak kodlu değil|Açık kaynak kodlu|Açık kaynak kodu|
 |Desteklediği araçlar|Visual Studio|Visual Studio, VS Code, CLI araçları|Visual Studio, VS Code, CLI araçları|
