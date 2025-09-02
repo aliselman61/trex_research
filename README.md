@@ -358,14 +358,9 @@ Senkron programlama ile bekleme gerektiren işlemleri çağırmak, bulaşık mak
 
 </details>
 
-<details>  
+<details>
   
-<sumarry>dotnet --info çıktısı örneği ve yorumlama</sumarry>
-
-
-
-
-
-
+<summary>dotnet --info çıktısı örneği ve yorumlama</summary>
+  
 </details>
 
