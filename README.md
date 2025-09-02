@@ -412,7 +412,18 @@ global.json file:
 
 ## 3. Backend Geliştirme Temelleri
 
-  
+<details> 
+
+<sumarry>Backend nedir? Frontend ile farkları</sumarry> 
+
+
+
+
+
+
+
+
+</details>
 
 
 
