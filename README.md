@@ -362,22 +362,25 @@ Senkron programlama ile bekleme gerektiren işlemleri çağırmak, bulaşık mak
   
 <summary>dotnet --info çıktısı örneği ve yorumlama</summary>
 
+### Example output of `dotnet --info`
+
+```txt
 .NET SDK:
  Version:           9.0.201
  Commit:            071aaccdc2
  Workload version:  9.0.200-manifests.a3a1a094
  MSBuild version:   17.13.13+1c2026462
 
-Çalışma Zamanı Ortamı:
+Runtime Environment:
  OS Name:     Windows
  OS Version:  10.0.26100
  OS Platform: Windows
  RID:         win-x64
  Base Path:   C:\Program Files\dotnet\sdk\9.0.201\
 
-.NET iş yükleri yüklendi:
- Görüntülenecek yüklü iş yükü yok.
- Yeni bildirimler yüklenirken loose manifests kullanılacak şekilde yapılandırıldı.
+Workloads installed:
+ No installed workloads found.
+ Configured to use loose manifests for newly installed manifests.
 
 Host:
   Version:      9.0.3
