@@ -410,7 +410,7 @@ global.json file:
 ```
 </details>
 
-
+## 3. Backend Geliştirme Temelleri
 
   
 
