@@ -406,12 +406,12 @@ Environment variables:
   Not set
 
 global.json file:
-  Not found
+  Not found```
 
 
 
 
 
   
-</details>
+
 
