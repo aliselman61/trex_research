@@ -313,67 +313,16 @@ Kanban → İş akışı panosu (To Do → Doing → Done).
 <details>
 <summary>.NET Framework, .NET Core ve .NET 7/8+ farkları</summary>
   
- NET Framework (2002 → Legacy)
-
- Sadece Windows çalışır.
-
- WinForms, WPF, ASP.NET WebForms/MVC içerir.
-
- Artık yeni özellik eklenmiyor, sadece güvenlik güncellemesi.
-
- .NET Core (2016–2020 → Geçiş dönemi)
-
- Cross-platform (Windows, Linux, macOS).
-
- Açık kaynak, daha hafif ve hızlı.
-
- ASP.NET Core geldi (eski ASP.NET’ten çok daha performanslı).
-
- CLI (dotnet run, dotnet build) ile modern geliştirme.
-
- 3.1 son LTS sürüm, sonra “Core” adı bırakıldı.
-
- .NET 5/6/7/8+ (2020 → Günümüz, birleşik platform)
-
-  Artık tek isim: .NET (Core + Framework birleşti).
-
-  Web, masaüstü, mobil, bulut, IoT hepsi tek platform.
-
-  C# 9/10/11/12 ile modern dil özellikleri.
-
-  Çok daha hızlı GC, Native AOT, microservice/container uyumu.
-
-  LTS sürümleri: .NET 6 (2021), .NET 8 (2023).
-
-  Framework = Eski, Windows’a bağımlı.
-
-  Core = Açık kaynak, cross-platform, hız odaklı.
-
-.NET 7/8+ = Birleşik, modern, her yerde çalışan ve geleceğe dönük.</summa
+|Özellik| .NET Framework   | .NET Core | .NET 7/8+  |
+|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
+|Platform desteği|Yalnızca Windows'ta çalışır|Platformlar arası çalışır(Linux,Windows,Mac vb.)|Platformlar arası çalışır|
+|Güncellemeler|Güncelleme almaz|Güncelleme almaz|Güncelleme almaya devam eder|
+|Kaynak kodu|Açık kaynak kodlu değil|Açık kaynak kodlu|Açık kaynak kodlu|
+|Desteklediği araçlar|Visual Studio|Visual Studio, VS Code, CLI araçları|Visual Studio, VS Code, CLI araçları|
+|Kullanım alanları|Eski Windows uygulamaları|Çoklu platform uygulamaları, Web, API, Mikroservis|Modern çoklu platform uygulamaları, Bulut, Web API ve dahası|
+|Performans|Kıyasla düşük|Ortalama|En iyi performans|
 
 </details>
-
-<details>
-
-
-
-
-
-
-  
-<detail> 
-
-
-
-
-
-
-
-
-
-</details>
-
-
 
 
 
