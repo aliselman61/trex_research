@@ -349,8 +349,13 @@ Program akışı, uzun süren işlemin bitmesini beklemek zorunda kalmaz.
 Sonuç hazır olduğunda, program o işin sonucunu alıp kaldığı yerden devam eder.
 
 * Senkron/Asenkron örnek senaryo açıklaması
+* 
+HTTP çağrıları, Web API çağrıları gibi işlemler bekleme gerektirebilir. Geleneksel senkron programlama ile bu işlemleri gerçekleştirmek, aslında lokal bilgisayarın kontrolü dışında olan bir bekleme oluşturur. Bu da hem kullanıcı deneyimi hem de zaman verimliliği açısından oldukça mantıksızdır.
 
-  
+Kullanıcı, arka planda veri çağrıları yapılırken başka işlerle ilgilenebilmek ister. Hiçbirimiz evde bulaşık makinesi çalışıyor diye mutfakta donup kalmayız; makine işini bitirene kadar başka işlerle uğraşırız.
+
+Senkron programlama ile bekleme gerektiren işlemleri çağırmak, bulaşık makinesinin işini bitirmesini oturup beklemek kadar verimsizdir. Asenkron programlama sayesinde ise kullanıcı, çağırdığı bir verinin gelmesini beklerken programın başka bir yerinde farklı bir işlem yapabilir ve ciddi bir zaman kazancı elde eder.
+
 </details>
 
 
