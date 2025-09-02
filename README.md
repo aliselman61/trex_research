@@ -361,6 +361,54 @@ Senkron programlama ile bekleme gerektiren işlemleri çağırmak, bulaşık mak
 <details>
   
 <summary>dotnet --info çıktısı örneği ve yorumlama</summary>
+
+.NET SDK:
+ Version:           9.0.201
+ Commit:            071aaccdc2
+ Workload version:  9.0.200-manifests.a3a1a094
+ MSBuild version:   17.13.13+1c2026462
+
+Çalışma Zamanı Ortamı:
+ OS Name:     Windows
+ OS Version:  10.0.26100
+ OS Platform: Windows
+ RID:         win-x64
+ Base Path:   C:\Program Files\dotnet\sdk\9.0.201\
+
+.NET iş yükleri yüklendi:
+ Görüntülenecek yüklü iş yükü yok.
+ Yeni bildirimler yüklenirken loose manifests kullanılacak şekilde yapılandırıldı.
+
+Host:
+  Version:      9.0.3
+  Architecture: x64
+  Commit:       831d23e561
+
+.NET SDKs installed:
+  9.0.201 [C:\Program Files\dotnet\sdk]
+
+.NET runtimes installed:
+  Microsoft.AspNetCore.App 8.0.14 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 9.0.3  [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 8.0.14    [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 9.0.3     [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.WindowsDesktop.App 8.0.14 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 9.0.3  [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+Other architectures found:
+  x86   [C:\Program Files (x86)\dotnet]
+    registered at [HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\InstallLocation]
+
+Environment variables:
+  Not set
+
+global.json file:
+  Not found
+
+
+
+
+
   
 </details>
 
