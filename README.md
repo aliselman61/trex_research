@@ -476,17 +476,82 @@ Projede belirli bir SDK sürümü kullanılmak istenirse global.json dosyası il
 <summary> Backend nedir? Frontend ile farkları </summary>
 
 Front-End, kullanıcı deneyimini ve etkileşimi şekillendirirken, Back-End, web sitesinin işlevselliğini ve veri yönetimini sağlar. her iki katman da başarılı bir web sitesi için kritik öneme sahiptir ve birlikte çalışarak kullanıcıların ihtiyaçlarını karşılayan ve beklentilerini aşan bir deneyim sunarlar.
-
-
 </details>
 
-<details>>    
+<details>    
 
 <summary> Web sunucusu nedir? API nedir? API türleri </summary>
 
+Web sunucusu, istemcilerden (genellikle tarayıcı) gelen HTTP/HTTPS isteklerini kabul eden ve yanıtlayan yazılım veya donanımdır.
 
+Statik içerik (HTML, CSS, JS, resim) ya da dinamik içerik (PHP, ASP.NET, Node.js uygulamaları) dönebilir.
 
+Tarayıcı bir siteye istek gönderdiğinde web sunucusu uygun yanıtı üretip istemciye iletir.
 
+Örnek web sunucuları:
+
+Apache
+
+Nginx
+
+IIS (Internet Information Services)
+
+LiteSpeed
+
+API (Application Programming Interface) Nedir?
+
+API, bir yazılımın başka yazılımlarla haberleşmesini sağlayan arayüzdür.
+
+İç işleyişi bilmeden, belirli kurallar (endpoint, method, veri formatı) üzerinden erişim sağlar.
+
+En yaygın kullanılan türü Web API’lerdir.
+
+Örnek:
+
+Hava durumu uygulaması telefonuna veri getirmek için hava durumu API’sini kullanır.
+
+Google Maps API, başka uygulamalara harita ekleme olanağı sağlar.
+
+API Türleri
+1. Erişim Türüne Göre
+
+Open API (Public API): Herkesin erişimine açık.
+
+Partner API: Sadece iş ortaklarına özel.
+
+Private API: Sadece kurum içi kullanım için.
+
+2. Mimarisine Göre
+
+REST API
+
+HTTP metodlarını (GET, POST, PUT, DELETE) kullanır.
+
+Genellikle JSON döner.
+
+SOAP API
+
+XML tabanlıdır, daha katıdır.
+
+Bankacılık gibi güvenlik kritik alanlarda kullanılır.
+
+GraphQL API
+
+Tek endpoint üzerinden esnek veri sorgusu yapılabilir.
+
+gRPC
+
+Google tarafından geliştirilmiştir.
+
+Hızlı, binary tabanlı, mikroservisler arası iletişim için uygundur.
+
+3. Kullanım Alanına Göre
+
+Web API → İnternet üzerinden erişilen API’ler.
+
+Library API → Programlama kütüphaneleri için sağlanan API’ler (.NET, Java API).
+
+Operating System API → İşletim sistemleri ile haberleşmeyi sağlayan API’ler (Windows API, Linux system call).
 
 </details>
 
