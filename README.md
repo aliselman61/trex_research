@@ -408,6 +408,65 @@ Environment variables:
 global.json file:
   Not found
 ```
+.NET SDK
+
+Kullanılan SDK sürümü 9.0.201. Bu sürüm, derleme ve geliştirme araçlarını içeriyor.
+
+MSBuild version: 17.13.13 bilgisi, projelerin derlenmesinde kullanılan MSBuild sürümünü gösteriyor.
+
+Yalnızca bir SDK sürümü kurulu, yani makinede şu anda yalnızca .NET 9 SDK mevcut.
+
+Çalışma Zamanı Ortamı (Runtime Environment)
+
+İşletim sistemi Windows 10 (10.0.26100) üzerinde çalışıyor.
+
+Mimari x64, yani 64-bit.
+
+RID (Runtime Identifier) değeri win-x64.
+
+Host
+
+.NET uygulamalarını çalıştıran host sürümü 9.0.3.
+
+Mimari yine x64.
+
+Commit bilgisi, host’un derlendiği kaynak sürümü gösteriyor.
+
+.NET iş yükleri (workloads)
+
+Hiçbir ek iş yükü yüklenmemiş.
+
+Örneğin mobil (MAUI), WebAssembly veya IoT workloadları burada listelenirdi.
+
+.NET SDKs installed
+
+Sadece 9.0.201 yüklü.
+
+Farklı sürümler olmadığı için tüm projeler bu SDK ile derleniyor.
+
+.NET runtimes installed
+
+Microsoft.NETCore.App: Console ve temel uygulamalar için. Hem 8.0.14 hem 9.0.3 mevcut.
+
+Microsoft.AspNetCore.App: Web uygulamaları için gerekli. Hem 8.0.14 hem 9.0.3 mevcut.
+
+Microsoft.WindowsDesktop.App: WinForms ve WPF için. Yine hem 8.0.14 hem 9.0.3 sürümleri yüklü.
+
+Bu sayede sistem hem .NET 8 hem de .NET 9 projelerini çalıştırabiliyor.
+
+Other architectures found
+
+32-bit (x86) .NET yüklemesi de mevcut, ancak asıl kullanılan mimari 64-bit.
+
+Environment variables
+
+.NET için özel ortam değişkeni tanımlı değil.
+
+global.json
+
+Bulunmadığı için herhangi bir SDK sürüm kısıtlaması yok.
+
+Projeler varsayılan olarak en güncel kurulu SDK (9.0.201) ile derleniyor.
 </details>
 
 <details>
