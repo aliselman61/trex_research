@@ -480,7 +480,15 @@ Front-End, kullanıcı deneyimini ve etkileşimi şekillendirirken, Back-End, we
 
 </details>
 
-#emco was here !!!
+<details>>    
+
+<summary>Web sunucusu nedir? API nedir? API türleri</summary>
+
+
+
+
+
+</details>
 
 
 
