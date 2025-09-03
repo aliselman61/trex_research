@@ -475,6 +475,9 @@ Projede belirli bir SDK sürümü kullanılmak istenirse global.json dosyası il
 
 <summary> Backend nedir? Frontend ile farkları </summary>
 
+Front-End, kullanıcı deneyimini ve etkileşimi şekillendirirken, Back-End, web sitesinin işlevselliğini ve veri yönetimini sağlar. her iki katman da başarılı bir web sitesi için kritik öneme sahiptir ve birlikte çalışarak kullanıcıların ihtiyaçlarını karşılayan ve beklentilerini aşan bir deneyim sunarlar.
+
+
 </details>
 
 
