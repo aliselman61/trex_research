@@ -408,65 +408,55 @@ Environment variables:
 global.json file:
   Not found
 ```
-.NET SDK
+dotnet --info komutu, bilgisayarında kurulu olan .NET ortamını özetler. Çıktıdaki bölümler şu anlama gelir:
 
-Kullanılan SDK sürümü 9.0.201. Bu sürüm, derleme ve geliştirme araçlarını içeriyor.
+1. .NET SDK
 
-MSBuild version: 17.13.13 bilgisi, projelerin derlenmesinde kullanılan MSBuild sürümünü gösteriyor.
+Hangi SDK sürümünün kullanıldığını gösterir.
 
-Yalnızca bir SDK sürümü kurulu, yani makinede şu anda yalnızca .NET 9 SDK mevcut.
+SDK (Software Development Kit), .NET projelerini derlemek ve geliştirmek için gerekli araçları içerir.
 
-Çalışma Zamanı Ortamı (Runtime Environment)
+2. Runtime Environment (Çalışma Zamanı Ortamı)
 
-İşletim sistemi Windows 10 (10.0.26100) üzerinde çalışıyor.
+İşletim sistemini (OS Name, OS Version) ve mimariyi (x64, x86, arm64 vb.) gösterir.
 
-Mimari x64, yani 64-bit.
+RID (Runtime Identifier) değeri, uygulamanın hangi platformda çalıştığını belirtir.
 
-RID (Runtime Identifier) değeri win-x64.
+3. Host
 
-Host
+.NET uygulamalarının çalıştırıldığı host ortamının sürümünü gösterir.
 
-.NET uygulamalarını çalıştıran host sürümü 9.0.3.
+Burada .NET runtime versiyonu ve sistem mimarisi listelenir.
 
-Mimari yine x64.
+4. .NET SDKs installed
 
-Commit bilgisi, host’un derlendiği kaynak sürümü gösteriyor.
+Sisteminde yüklü tüm SDK sürümlerini listeler.
 
-.NET iş yükleri (workloads)
+Birden fazla SDK kuruluysa, projeler global.json dosyasına veya varsayılan kurallara göre uygun olanı kullanır.
 
-Hiçbir ek iş yükü yüklenmemiş.
+5. .NET runtimes installed
 
-Örneğin mobil (MAUI), WebAssembly veya IoT workloadları burada listelenirdi.
+Kurulu olan çalışma zamanlarını listeler.
 
-.NET SDKs installed
+Microsoft.NETCore.App: Konsol uygulamaları için.
 
-Sadece 9.0.201 yüklü.
+Microsoft.AspNetCore.App: Web uygulamaları için.
 
-Farklı sürümler olmadığı için tüm projeler bu SDK ile derleniyor.
+Microsoft.WindowsDesktop.App: WinForms ve WPF uygulamaları için.
 
-.NET runtimes installed
+Farklı sürümlerin aynı anda kurulu olması, eski projeleri de çalıştırabilmeni sağlar.
 
-Microsoft.NETCore.App: Console ve temel uygulamalar için. Hem 8.0.14 hem 9.0.3 mevcut.
+6. Other architectures found
 
-Microsoft.AspNetCore.App: Web uygulamaları için gerekli. Hem 8.0.14 hem 9.0.3 mevcut.
+Ek olarak farklı mimarilerde (örneğin x86) .NET kurulmuşsa burada görünür.
 
-Microsoft.WindowsDesktop.App: WinForms ve WPF için. Yine hem 8.0.14 hem 9.0.3 sürümleri yüklü.
+7. Environment variables
 
-Bu sayede sistem hem .NET 8 hem de .NET 9 projelerini çalıştırabiliyor.
+.NET ile ilgili özel ortam değişkenleri tanımlandıysa burada listelenir.
 
-Other architectures found
+8. global.json file
 
-32-bit (x86) .NET yüklemesi de mevcut, ancak asıl kullanılan mimari 64-bit.
-
-Environment variables
-
-.NET için özel ortam değişkeni tanımlı değil.
-
-global.json
-
-Bulunmadığı için herhangi bir SDK sürüm kısıtlaması yok.
-
-Projeler varsayılan olarak en güncel kurulu SDK (9.0.201) ile derleniyor.
+Projede belirli bir SDK sürümü kullanılmak istenirse global.json dosyası ile belirtilir. Eğer bulunmazsa, sistemdeki en güncel SDK kullanılır
 </details>
 
 <details>
