@@ -470,7 +470,7 @@ Projede belirli bir SDK sürümü kullanılmak istenirse global.json dosyası il
 </details>
 
 
-
+## 3. Backend Geliştirme Temelleri
 
 
 
