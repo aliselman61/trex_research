@@ -482,7 +482,7 @@ Front-End, kullanıcı deneyimini ve etkileşimi şekillendirirken, Back-End, we
 
 <details>>    
 
-<summary>Web sunucusu nedir? API nedir? API türleri</summary>
+<summary> Web sunucusu nedir? API nedir? API türleri </summary>
 
 
 
