@@ -410,13 +410,23 @@ global.json file:
 ```
 </details>
 
-## 3. Backend Geliştirme Temelleri
-<details> 
+<details>
+  
+<summary>arrow function (=>) ifadesinin C#’taki yeri</summary>
 
-<summary>Backend nedir? Frontend ile farkları</summary>
+* Tek satırda fonksiyon tanımlama: static int Multiply(int x, int y) => x * y;
+* Lambda ifadesi: Func<int, int> square = n => n * n;
 
-
+  
 </details>
+
+
+
+
+
+
+
+
 
 
 
