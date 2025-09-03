@@ -469,10 +469,13 @@ Projede belirli bir SDK sürümü kullanılmak istenirse global.json dosyası il
   
 </details>
 
-
 ## 3. Backend Geliştirme Temelleri
 
+<details>  
 
+<summary> Backend nedir? Frontend ile farkları </summary>
+
+</details>
 
 
 
