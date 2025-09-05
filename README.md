@@ -560,8 +560,119 @@ Operating System API → İşletim sistemleri ile haberleşmeyi sağlayan API’
 <summary>HTTP nedir? HTTP metodları: GET, POST, PUT, DELETE</summary>
 
 GET, POST, PUT, PATCH ve DELETE en sık kullanılanlardır ve HTTP protokolü üzerinden istemciler ile sunucular arasındaki iletişimin temelini oluştururlar. Bu yöntemler, World Wide Web üzerinden istemci-sunucu iletişimi sırasında bir URL ile tanımlanan bir kaynak üzerinde gerçekleştirilebilecek eylemleri tanımlar
+
+HTTP Metodları ve Örnekler
+1. GET
+* Sunucudan veri istemek için kullanılır.
+
+* Gövde (body) göndermez.
+```
+GET /products HTTP/1.1
+Host: example.com
+```
+Sunucudan ürünler listesini ister.
+
+
+2. POST
+
+* Sunucuya yeni veri eklemek/göndermek için kullanılır.
+
+* Veri body kısmında gönderilir.
+```
+POST /products HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "price": 20000
+}
+```
+Sunucuya yeni ürün ekler.
+
+
+3. PUT
+
+* Sunucuda var olan bir veriyi tamamen güncellemek için kullanılır.
+
+* Gönderilen body, önceki verinin yerine geçer.
+```
+PUT /products/10 HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "name": "Gaming Laptop",
+  "price": 25000
+}
+```
+ID’si 10 olan ürünün tüm verisini günceller.
+
+
+4. PATCH
+
+* Sunucudaki veriyi kısmi olarak güncellemek için kullanılır.
+
+* Sadece değişen alanlar body’de gönderilir.
+```
+PATCH /products/10 HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "price": 22000
+}
+```
+Sadece fiyat bilgisini günceller.
+
+5. DELETE
+
+* Sunucudaki veriyi silmek için kullanılır.
+```
+DELETE /products/10 HTTP/1.1
+Host: example.com
+```
+ID’si 10 olan ürünü siler.
+
+
+6. HEAD
+
+* GET gibidir ama sadece başlık (header) bilgilerini döner, gövdeyi döndürmez.
+```
+HEAD /products HTTP/1.1
+Host: example.com
+```
+7. OPTIONS
+
+* Sunucunun hangi HTTP metodlarını desteklediğini öğrenmek için kullanılır.
+```
+OPTIONS /products HTTP/1.1
+Host: example.com
+```
+
+Cevap:
+Allow: GET, POST, PUT, DELETE, OPTIONS
+
+
+Özet:
+
+GET → Veri al
+
+POST → Yeni veri oluştur
+
+PUT → Tam güncelle
+
+PATCH → Kısmi güncelle
+
+DELETE → Sil
+
+HEAD → Sadece header bilgilerini al
+
+OPTIONS → Desteklenen metodları öğren
+
   
 </details>
+
 
 
 
