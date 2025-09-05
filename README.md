@@ -783,8 +783,11 @@ Content-Type: application/json
   "email": "ali@example.com"
 }
 ```
+</details>
 
+<details> 
 
+<summary>JSON veri formatı ve kullanım amacı</summary>
 
 
 
@@ -795,5 +798,3 @@ Content-Type: application/json
 
 
 </details>
-
-
