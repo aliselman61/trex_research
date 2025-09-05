@@ -559,10 +559,7 @@ Operating System API → İşletim sistemleri ile haberleşmeyi sağlayan API’
 
 <summary>HTTP nedir? HTTP metodları: GET, POST, PUT, DELETE</summary>
 
-
-
-
-
+GET, POST, PUT, PATCH ve DELETE en sık kullanılanlardır ve HTTP protokolü üzerinden istemciler ile sunucular arasındaki iletişimin temelini oluştururlar. Bu yöntemler, World Wide Web üzerinden istemci-sunucu iletişimi sırasında bir URL ile tanımlanan bir kaynak üzerinde gerçekleştirilebilecek eylemleri tanımlar
   
 </details>
 
