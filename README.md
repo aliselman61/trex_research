@@ -669,10 +669,131 @@ DELETE → Sil
 HEAD → Sadece header bilgilerini al
 
 OPTIONS → Desteklenen metodları öğren
-
   
 </details>
 
+<details>
 
+<summary>RESTful servislerin çalışma mantığı</summary>
+
+* 1. REST Nedir?
+
+Representational State Transfer (REST), web servisleri için kullanılan bir mimari tarzdır.
+
+Amacı, HTTP protokolünün sunduğu kuralları kullanarak basit, anlaşılır ve standart bir şekilde istemci–sunucu arasında iletişim kurmaktır.
+
+REST’i “kurallar bütünü” olarak düşünebilirsin.
+
+* 2. Temel Mantık
+
+RESTful servislerde:
+
+Her kaynak (örneğin: kullanıcı, ürün, sipariş) bir URL (endpoint) ile temsil edilir.
+
+Bu kaynaklar üzerinde işlem yapmak için HTTP metodları (GET, POST, PUT, DELETE, PATCH…) kullanılır.
+
+Veri genelde JSON formatında taşınır.
+
+* 3. Kaynak ve URI Mantığı
+
+Her şey bir kaynaktır.
+
+Örnek: Kullanıcı listesi → /users
+
+Tek bir kullanıcı → /users/5
+
+Kullanıcının siparişleri → /users/5/orders
+
+URI, kaynağı temsil eder. Kaynağın ne olduğunu URI belirler, üzerinde ne yapılacağını HTTP metodu belirler.
+
+* 4. HTTP Metodları ile İşlemler
+
+REST’te CRUD işlemleri HTTP metodlarına denk gelir:
+
+GET /users → Tüm kullanıcıları getir
+
+GET /users/5 → ID’si 5 olan kullanıcıyı getir
+
+POST /users → Yeni kullanıcı oluştur
+
+PUT /users/5 → ID’si 5 olan kullanıcıyı tamamen güncelle
+
+PATCH /users/5 → ID’si 5 olan kullanıcıyı kısmi güncelle
+
+DELETE /users/5 → ID’si 5 olan kullanıcıyı sil
+
+* 5. İstemci - Sunucu İlişkisi
+
+İstemci (client) → Tarayıcı, mobil uygulama, masaüstü program olabilir.
+
+Sunucu (server) → İstekleri alır, işler ve yanıt verir.
+
+İstemci, sunucuya hangi veriyle ne yapılacağını HTTP isteği (request) ile söyler.
+
+Sunucu, sonucu HTTP cevabı (response) olarak döner.
+
+* 6. Statelesness (Durumsuzluk)
+
+RESTful servisler stateless olmalıdır.
+
+Sunucu, her isteği bağımsız görür.
+
+Önceki isteklerin bilgisini tutmaz.
+
+Gerekli bilgiler (kimlik doğrulama, filtreler, parametreler) her istekte tekrar gönderilir.
+
+* 7. Response ve Status Codes
+
+Sunucu her isteğe bir HTTP durum kodu döner:
+
+200 OK → İşlem başarılı
+
+201 Created → Yeni kaynak oluşturuldu
+
+400 Bad Request → Hatalı istek
+
+401 Unauthorized → Yetkisiz erişim
+
+404 Not Found → Kaynak bulunamadı
+
+500 Internal Server Error → Sunucu hatası
+
+8. JSON Örneği
+
+Bir kullanıcı oluşturma isteği:
+```
+POST /users HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "name": "Ali",
+  "email": "ali@example.com"
+}
+```
+
+Sunucu cevabı:
+```
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": 5,
+  "name": "Ali",
+  "email": "ali@example.com"
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+</details>
 
 
