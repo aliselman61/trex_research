@@ -676,7 +676,7 @@ OPTIONS → Desteklenen metodları öğren
 
 <summary>RESTful servislerin çalışma mantığı</summary>
 
-* 1. REST Nedir?
+* REST Nedir?
 
 Representational State Transfer (REST), web servisleri için kullanılan bir mimari tarzdır.
 
@@ -684,7 +684,7 @@ Amacı, HTTP protokolünün sunduğu kuralları kullanarak basit, anlaşılır v
 
 REST’i “kurallar bütünü” olarak düşünebilirsin.
 
-* 2. Temel Mantık
+* Temel Mantık
 
 RESTful servislerde:
 
@@ -694,7 +694,7 @@ Bu kaynaklar üzerinde işlem yapmak için HTTP metodları (GET, POST, PUT, DELE
 
 Veri genelde JSON formatında taşınır.
 
-* 3. Kaynak ve URI Mantığı
+* Kaynak ve URI Mantığı
 
 Her şey bir kaynaktır.
 
@@ -706,7 +706,7 @@ Kullanıcının siparişleri → /users/5/orders
 
 URI, kaynağı temsil eder. Kaynağın ne olduğunu URI belirler, üzerinde ne yapılacağını HTTP metodu belirler.
 
-* 4. HTTP Metodları ile İşlemler
+* HTTP Metodları ile İşlemler
 
 REST’te CRUD işlemleri HTTP metodlarına denk gelir:
 
@@ -722,7 +722,7 @@ PATCH /users/5 → ID’si 5 olan kullanıcıyı kısmi güncelle
 
 DELETE /users/5 → ID’si 5 olan kullanıcıyı sil
 
-* 5. İstemci - Sunucu İlişkisi
+* İstemci - Sunucu İlişkisi
 
 İstemci (client) → Tarayıcı, mobil uygulama, masaüstü program olabilir.
 
@@ -732,7 +732,7 @@ Sunucu (server) → İstekleri alır, işler ve yanıt verir.
 
 Sunucu, sonucu HTTP cevabı (response) olarak döner.
 
-* 6. Statelesness (Durumsuzluk)
+* Statelesness (Durumsuzluk)
 
 RESTful servisler stateless olmalıdır.
 
@@ -742,7 +742,7 @@ Sunucu, her isteği bağımsız görür.
 
 Gerekli bilgiler (kimlik doğrulama, filtreler, parametreler) her istekte tekrar gönderilir.
 
-* 7. Response ve Status Codes
+* Response ve Status Codes
 
 Sunucu her isteğe bir HTTP durum kodu döner:
 
@@ -758,7 +758,7 @@ Sunucu her isteğe bir HTTP durum kodu döner:
 
 500 Internal Server Error → Sunucu hatası
 
-8. JSON Örneği
+* JSON Örneği
 
 Bir kullanıcı oluşturma isteği:
 ```
