@@ -555,7 +555,16 @@ Operating System API → İşletim sistemleri ile haberleşmeyi sağlayan API’
 
 </details>
 
+<details>
 
+<summary>HTTP nedir? HTTP metodları: GET, POST, PUT, DELETE</summary>
+
+
+
+
+
+  
+</details>
 
 
 
