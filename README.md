@@ -840,7 +840,7 @@ Küçük, anlaşılır veri depolama ihtiyaçlarını karşılamak.
 </details>
 
 <details>
-<summary0>SOAP ve GraphQL nedir, REST’ten farkları</summary>
+<summary>SOAP ve GraphQL nedir, REST’ten farkları</summary>
 
 
 
