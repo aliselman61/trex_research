@@ -838,3 +838,12 @@ Küçük, anlaşılır veri depolama ihtiyaçlarını karşılamak.
 * "adres": { "sehir": "Bursa", "postaKodu": 16000 } → adres anahtarı, içinde başka anahtar-değer çiftleri olan bir nesneyi temsil eder.
 
 </details>
+
+<details>
+<summary0>SOAP ve GraphQL nedir, REST’ten farkları</summary>
+
+
+
+
+  
+</details>
