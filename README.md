@@ -842,8 +842,52 @@ Küçük, anlaşılır veri depolama ihtiyaçlarını karşılamak.
 <details>
 <summary>SOAP ve GraphQL nedir, REST’ten farkları</summary>
 
+* SOAP (Simple Object Access Protocol)
 
+XML tabanlı bir iletişim protokolüdür.
 
+Katı standartlara bağlıdır (WS-Security, WS-ReliableMessaging gibi).
 
-  
+Yalnızca XML kullanır.
+
+HTTP dışında SMTP, TCP gibi farklı protokollerle çalışabilir.
+
+Daha çok bankacılık, finans, telekom gibi güvenliğin ve standartlaşmanın çok kritik olduğu alanlarda tercih edilir.
+
+* GraphQL
+
+Facebook tarafından geliştirilmiş, API’ler için bir sorgulama dilidir.
+
+Tek endpoint üzerinden çalışır.
+
+İstemci yalnızca ihtiyacı olan veriyi talep eder.
+
+JSON formatında yanıt döner.
+
+Over-fetching (gereğinden fazla veri çekme) ve under-fetching (eksik veri çekme) sorunlarını çözer.
+
+Gerçek zamanlı veri için Subscriptions özelliği vardır.
+
+* REST (Representational State Transfer)
+
+HTTP tabanlı, en yaygın kullanılan web servis mimarisidir.
+
+Kaynaklara HTTP metodları (GET, POST, PUT, DELETE) ile erişilir.
+
+JSON ya da XML dönebilir (günümüzde çoğunlukla JSON).
+
+Her kaynak için ayrı endpoint vardır (örneğin /users, /orders).
+
+Basit, anlaşılır ve yaygın kullanımda olan bir yaklaşım sunar.
+
+| Özellik             | SOAP                            | REST                           | GraphQL                           |
+|---------------------|---------------------------------|--------------------------------|-----------------------------------|
+| Veri formatı        | XML                             | JSON (çoğunlukla) / XML        | JSON                              |
+| Endpoint yapısı     | Tek endpoint, karmaşık yapı     | Her kaynak için ayrı endpoint   | Tek endpoint                      |
+| Esneklik            | Katı standartlı                 | Orta düzey                     | Çok esnek (yalnızca istenen veri) |
+| Performans          | Ağır, yavaş                     | Hafif, genellikle hızlı         | Daha verimli                      |
+| Protokol desteği    | HTTP, SMTP, TCP vb.             | HTTP                           | HTTP                              |
+| Kullanım alanı      | Bankacılık, kurumsal entegrasyon| Genel web servisleri            | Modern web ve mobil API’ler       |
+| Öne çıkan özellik   | Güvenlik ve standartlar         | Basitlik ve yaygınlık           | Esneklik ve özelleştirme          |  
+
 </details>
