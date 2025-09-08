@@ -70,7 +70,7 @@
  İlk komut sadece belirli bir dosyayı, ikincisi ise proje içindeki tüm değişiklikleri staging alanına ekler.
 
 *  git commit
-
+  
  Staging alanındaki dosyaları kalıcı olarak kaydeder. Commit işlemi, yapılan değişikliklere bir “anlık görüntü” almak gibidir. Her commit, açıklayıcı bir mesajla etiketlenmelidir.
 
  Örnek kullanım:
@@ -788,13 +788,53 @@ Content-Type: application/json
 <details> 
 
 <summary>JSON veri formatı ve kullanım amacı</summary>
+JSON Veri Formatı
 
+JSON (JavaScript Object Notation), verilerin metin tabanlı olarak saklanmasını ve sistemler arasında kolayca taşınmasını sağlayan bir veri değişim formatıdır.
 
+Özellikleri
 
+Anahtar-değer çiftlerinden oluşur.
 
+Diziler ve nesneler kullanılarak hiyerarşik yapı kurulabilir.
 
+Programlama dillerinden bağımsızdır.
 
+Hem insanlar hem makineler tarafından kolay okunabilir.
 
+Kullanım Amacı
 
+Web istemcisi ile sunucu arasında veri alışverişi yapmak.
+
+Uygulamalarda yapılandırma (config) dosyası olarak kullanmak.
+
+Farklı platform ve diller arasında veri taşımak.
+
+Küçük, anlaşılır veri depolama ihtiyaçlarını karşılamak.
+
+Örnek JSON Verisi
+```
+{
+  "ad": "Ali",
+  "yas": 30,
+  "ogrenciMi": true,
+  "dersler": ["Matematik", "Tarih", "Fizik"],
+  "adres": {
+    "sehir": "Bursa",
+    "postaKodu": 16000
+  }
+}
+```
+Örneğin Açıklaması
+
+* "ad": "Ali" → Anahtar ad, değeri "Ali" olan bir metin bilgisidir.
+
+* "yas": 30 → Anahtar yas, değeri 30 olan sayısal bir bilgidir.
+
+* "ogrenciMi": true → Anahtar ogrenciMi, değeri true olan mantıksal (boolean) bilgidir.
+
+* "dersler": ["Matematik", "Tarih", "Fizik"] → dersler anahtarı, içinde üç eleman bulunan bir diziyi ifade eder.
+
+* "adres": { "sehir": "Bursa", "postaKodu": 16000 } → adres anahtarı, içinde başka anahtar-değer çiftleri olan bir nesneyi temsil eder.
 
 </details>
