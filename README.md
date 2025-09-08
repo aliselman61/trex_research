@@ -892,9 +892,11 @@ Basit, anlaşılır ve yaygın kullanımda olan bir yaklaşım sunar.
 
 </details>
 
+## 4. ASP.NET
+
 <details> 
 
-## 4. ASP.NET
+<summary>ASP.NET ve ASP.NET Core nedir? Avantajları, farkları</summary>
 
 
 
