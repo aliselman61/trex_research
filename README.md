@@ -966,7 +966,16 @@ Minimal API ve gRPC desteği sayesinde mikroservislerde ideal.
 
 <summary>MVC nedir, ne için kullanılınır</summary>
 
+MVC (Model-View-Controller), yazılım geliştirmede kullanılan bir mimari desendir.
 
+* Model (M): Uygulamanın verilerini ve iş kurallarını temsil eder. (Örn: Veritabanı işlemleri, iş mantığı)
+
+* View (V): Kullanıcıya gösterilen arayüzdür. (Örn: HTML sayfası, UI ekranı)
+
+* Controller (C): Kullanıcıdan gelen isteği alır, işleyip uygun Model ve View’i yönlendirir.
+
+Ne için kullanılır?
+Uygulamalarda katmanlı yapı sağlar. Kodun okunabilirliğini, bakımını ve test edilebilirliğini kolaylaştırır. Web uygulamalarında en çok tercih edilen desenlerden biridir.
 
 
 </details>
