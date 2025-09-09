@@ -960,7 +960,13 @@ Minimal API ve gRPC desteği sayesinde mikroservislerde ideal.
 | **Açık Kaynak**  | Hayır                        | Evet                                       |
 | **Gelecek**      | Yeni geliştirme yok          | Aktif olarak geliştiriliyor                |
 
+</details>
+
+<details> 
+
+<summary>MVC nedir, ne için kullanılınır</summary>
+
+
 
 
 </details>
-
