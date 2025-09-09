@@ -1005,12 +1005,14 @@ app.UseEndpoints(endpoints =>
 * UseAuthorization() → Yetki kontrolü yapar.
 
 * UseEndpoints() → İsteği ilgili endpoint’e yönlendirir.
+  
 </details>
 
-<details> 
-<sumarry>Dependency Injection (DI) nedir, neden önemlidir?</sumarry>
+<details>
 
+<summary>Dependency Injection (DI) nedir, neden önemlidir</summary>
 
+  
 </details>
 
 
