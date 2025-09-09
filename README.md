@@ -977,5 +977,42 @@ MVC (Model-View-Controller), yazılım geliştirmede kullanılan bir mimari dese
 Ne için kullanılır?
 Uygulamalarda katmanlı yapı sağlar. Kodun okunabilirliğini, bakımını ve test edilebilirliğini kolaylaştırır. Web uygulamalarında en çok tercih edilen desenlerden biridir.
 
+</details>
+
+<details>
+  
+<summary>Middleware nedir, nasıl çalışır</summary>
+
+* Middleware, farklı uygulamalar, sistemler ve veritabanları arasında etkileşim ve veri akışı sağlayan bulut hizmetleridir. Uygulamalar ve veriler arasında bir köprü görevi görür bu sayede sistemler arasında kesintisiz iletişim sağlar ve veri akışını düzenler.
+ASP.NET Core uygulamalarında middleware, gelen HTTP isteğinin geçtiği aşamaları belirleyen işlem hattıdır. Her middleware isteği işleyebilir, sonraki aşamaya gönderebilir veya sonlandırabilir. Bu yüzden eklenme sırası çok önemlidir. Yanlış sıralama, kimlik doğrulama ve yetkilendirme gibi kritik işlevlerin devre dışı kalmasına yol açar.
+
+Doğru Sıralama Örneği
+```
+app.UseRouting();          
+app.UseAuthentication();   
+app.UseAuthorization();    
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
+```
+Özetle
+
+* UseRouting() → Rotaları hazırlar.
+
+* UseAuthentication() → Kullanıcıyı doğrular.
+
+* UseAuthorization() → Yetki kontrolü yapar.
+
+* UseEndpoints() → İsteği ilgili endpoint’e yönlendirir.
+</details>
+
+<details> 
+<sumarry>Dependency Injection (DI) nedir, neden önemlidir?</sumarry>
+
 
 </details>
+
+
+
+
