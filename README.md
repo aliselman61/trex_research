@@ -898,6 +898,67 @@ Basit, anlaşılır ve yaygın kullanımda olan bir yaklaşım sunar.
 
 <summary>ASP.NET ve ASP.NET Core nedir? Avantajları, farkları</summary>
 
+ASP.NET ve ASP.NET Core, Microsoft tarafından geliştirilen web uygulama geliştirme framework’leridir. İkisi birbirine yakın kavramlar olsa da, teknoloji olarak farklı dönemleri temsil ederler.
+
+* ASP.NET Nedir?
+
+2002’de .NET Framework’ün bir parçası olarak tanıtıldı.
+
+Yalnızca Windows işletim sistemi üzerinde çalışır.
+
+Web Forms, MVC (Model-View-Controller) ve Web API gibi yaklaşımları destekler.
+
+.NET Framework’e bağımlıdır, yani günümüzde .NET Framework 4.8’e kadar gelmiştir ve daha fazla büyük güncelleme almayacaktır.
+
+Modern uygulamalarda “eski teknoloji” kabul ediliyor ama hâlen kurumsal projelerde yaygın olarak kullanılmakta.
+
+* ASP.NET Core Nedir?
+
+2016’da tanıtıldı, ASP.NET’in yeniden yazılmış, açık kaynak ve çapraz platform halidir.
+
+Windows, Linux ve macOS üzerinde çalışır.
+
+.NET Core üzerine kurulmuştu, şimdi .NET 5+ (günümüzde .NET 9) çatısı altında gelişiyor.
+
+Daha hızlı, hafif ve bulut tabanlı uygulamalara uygun.
+
+Web API ve MVC birleşmiş durumda → tek bir yapıdan hem web sayfası hem API geliştirilebilir.
+
+Dependency Injection, Middleware, Minimal API gibi modern mimari özellikleri destekler.
+
+* ASP.NET Avantajları
+
+Uzun yıllardır kullanılan, olgun bir framework.
+
+Kurumsal projelerde hâlâ çok geniş kullanım alanı var.
+
+Windows Server + IIS entegrasyonu güçlü.
+
+Büyük topluluk ve çok sayıda hazır kütüphane mevcut.
+
+* ASP.NET Core Avantajları
+
+Çapraz platform (Windows, Linux, macOS).
+
+Performansı yüksek, özellikle Kestrel web server sayesinde.
+
+Açık kaynak ve sürekli gelişiyor.
+
+Bulut dostu, container (Docker, Kubernetes) ile kolayca dağıtılabilir.
+
+Daha esnek: Middleware tabanlı mimari → geliştirici kendi pipeline’ını kurabilir.
+
+Minimal API ve gRPC desteği sayesinde mikroservislerde ideal.
+
+| Özellik          | ASP.NET                      | ASP.NET Core                               |
+|------------------|------------------------------|--------------------------------------------|
+| **Çıkış Yılı**   | 2002                         | 2016                                       |
+| **Çalışma Ortamı** | Sadece Windows              | Windows, Linux, macOS                     |
+| **Performans**   | Daha düşük, IIS bağımlı      | Yüksek, Kestrel + IIS/NGINX                |
+| **Framework**    | .NET Framework               | .NET 5/6/7/8/9                             |
+| **Mimari**       | Web Forms, MVC, Web API ayrı | MVC + API birleşik, Middleware tabanlı     |
+| **Açık Kaynak**  | Hayır                        | Evet                                       |
+| **Gelecek**      | Yeni geliştirme yok          | Aktif olarak geliştiriliyor                |
 
 
 
