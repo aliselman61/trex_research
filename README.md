@@ -1012,9 +1012,41 @@ app.UseEndpoints(endpoints =>
 
 <summary>Dependency Injection (DI) nedir, neden önemlidir</summary>
 
+Dependency Injection (DI) Nedir?
+Dependency Injection (Bağımlılık Enjeksiyonu), bir sınıfın ihtiyaç duyduğu bağımlılıkları (örneğin başka sınıflar, servisler, veritabanı bağlantıları) kendisi oluşturmaması, dışarıdan alması prensibidir. Yani bir sınıf içinde new anahtar kelimesiyle bağımlılık oluşturmak yerine, bu bağımlılıklar constructor, property veya method aracılığıyla dışarıdan “enjekte edilir”.
+
+ *Örnek:
+```
+// Kötü örnek (sınıf bağımlılığı kendi oluşturuyor)
+public class OrderService
+{
+    private readonly PaymentService _paymentService = new PaymentService();
+
+    public void CompleteOrder()
+    {
+        _paymentService.Pay();
+    }
+}
+
+// İyi örnek (Dependency Injection kullanılıyor)
+public class OrderService
+{
+    private readonly IPaymentService _paymentService;
+
+    public OrderService(IPaymentService paymentService)
+    {
+        _paymentService = paymentService;
+    }
+
+    public void CompleteOrder()
+    {
+        _paymentService.Pay();
+    }
+```
+
+
+
+
+
   
 </details>
-
-
-
-
