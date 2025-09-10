@@ -1042,11 +1042,15 @@ public class OrderService
     {
         _paymentService.Pay();
     }
-```
+```  
+</details>
 
-
-
-
-
+<details> 
   
+<summary>Clean Architecture</summary>
+
+
+
+
+
 </details>
