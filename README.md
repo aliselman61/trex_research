@@ -1134,3 +1134,11 @@ Service Pattern: İş mantığını barındırır ve repository’leri kullanara
 ![1_vNZs7q1OgPc2yDaiGJpCwg](https://github.com/user-attachments/assets/4be9759b-39ae-4855-87ed-25ab931897fd)
 
 </details>
+
+## 5. Veritabanı ve ORM
+
+<details>
+
+<summary>SQL nedir?</summary>
+
+</details>
