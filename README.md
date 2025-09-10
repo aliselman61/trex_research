@@ -1097,8 +1097,40 @@ API ve Infrastructure, Application ve Domain’e bağımlı
 <details>  
 
 <summary>Katmanlı Mimari (Layered Architecture)</summary>
+Katmanlar
 
+* I. Presentation (UI) Katmanı
 
+Kullanıcı ile etkileşim sağlar.
 
+Controller, View veya API endpoint’leri burada bulunur.
+
+İş mantığını içermez, sadece Business katmanını çağırır.
+
+* II. Business (Logic) Katmanı
+
+İş kuralları ve uygulama mantığı burada yer alır.
+
+Presentation’dan gelen istekleri işler, gerekirse Data Access katmanını kullanır.
+
+Service sınıfları genellikle bu katmanda bulunur.
+
+* III. Data Access (DAL) Katmanı
+
+Veritabanı veya dış veri kaynaklarıyla etkileşim kurar.
+
+Repository sınıflarıyla CRUD işlemleri yapılır.
+
+Business katmanındaki servisler, repository üzerinden veri çeker/kaydeder.
+
+Service & Repository Pattern
+
+Repository Pattern: Veritabanı erişimini soyutlar. (IUserRepository, EfUserRepository)
+
+Service Pattern: İş mantığını barındırır ve repository’leri kullanarak senaryoları yürütür. (UserService)
+
+ Akış: UI → Service → Repository → Database
+
+![1_vNZs7q1OgPc2yDaiGJpCwg](https://github.com/user-attachments/assets/4be9759b-39ae-4855-87ed-25ab931897fd)
 
 </details>
