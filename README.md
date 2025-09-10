@@ -1092,6 +1092,13 @@ Application sadece Domain’e bağımlı.
 
 API ve Infrastructure, Application ve Domain’e bağımlı
 
+</details>
+
+<details>  
+
+<summary>Katmanlı Mimari (Layered Architecture)</summary>
+
+
 
 
 </details>
