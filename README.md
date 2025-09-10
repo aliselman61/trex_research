@@ -1141,4 +1141,6 @@ Service Pattern: İş mantığını barındırır ve repository’leri kullanara
 
 <summary>SQL nedir?</summary>
 
+
+
 </details>
