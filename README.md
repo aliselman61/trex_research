@@ -1049,7 +1049,48 @@ public class OrderService
   
 <summary>Clean Architecture</summary>
 
+Clean Architecture Özeti
 
+Amaç:
+Uygulamanın iş kurallarını (domain) framework, veritabanı, UI gibi dış detaylardan bağımsız hale getirmek. Böylece kod esnek, test edilebilir ve sürdürülebilir olur.
+
+* Katmanlar
+
+I. Domain
+
+İş kuralları, entity’ler ve değer nesneleri.
+
+Hiçbir dış katmana bağımlı değil.
+
+II. Application
+
+Use case’ler (iş akışları).
+
+Domain’i kullanarak iş senaryolarını yürütür.
+
+Dış sistemlerle konuşmak için sadece interface tanımlar.
+
+III. Infrastructure
+
+Teknik detaylar (veritabanı, servis entegrasyonları).
+
+Application’daki interface’lerin implementasyonu burada yapılır.
+
+IV. API (Presentation)
+
+Kullanıcıya/istemciye açılan uç noktalar (controller, endpoint).
+
+Request alır → Application’a iletir → Response döner.
+
+* Bağımlılıkların Dışa Akması İlkesi
+
+Bağımlılıklar içeriye doğru akar.
+
+Domain hiçbir şeye bağımlı değil.
+
+Application sadece Domain’e bağımlı.
+
+API ve Infrastructure, Application ve Domain’e bağımlı
 
 
 
