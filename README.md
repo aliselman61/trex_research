@@ -1141,6 +1141,8 @@ Service Pattern: İş mantığını barındırır ve repository’leri kullanara
 
 <summary>SQL nedir?</summary>
 
+SQL, ilişkisel veri tabanlarını yönetmek, SQL veri tabanları oluşturmak ve farklı işlevler gerçekleştirerek içlerindeki verileri manipüle etmek için standartlaştırılmış bir programlama dilidir.
 
+Hem veri tabanı yöneticileri hem de geliştiriciler SQL’i verileri manipüle etmek ve veri entegrasyon komut dosyaları yazmak için kullanır. Benzer şekilde, veri analistleri de ilişkisel bir veri tabanını derinlemesine analiz etmek için SQL kullanır.
 
 </details>
