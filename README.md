@@ -1145,6 +1145,8 @@ SQL, ilişkisel veri tabanlarını yönetmek, SQL veri tabanları oluşturmak ve
 
 Hem veri tabanı yöneticileri hem de geliştiriciler SQL’i verileri manipüle etmek ve veri entegrasyon komut dosyaları yazmak için kullanır. Benzer şekilde, veri analistleri de ilişkisel bir veri tabanını derinlemesine analiz etmek için SQL kullanır.
 
+*	4 temel SQL sorgusuna örnek
+
 ```
 -- 1. SELECT → Veri listeleme
 SELECT * FROM Customers;
