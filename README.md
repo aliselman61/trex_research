@@ -1,6 +1,5 @@
  # trex_research
-***
-
+ 
 ## 1. Modern Yazılım Geliştirme Pratikleri
 
   <details>
@@ -513,6 +512,7 @@ Hava durumu uygulaması telefonuna veri getirmek için hava durumu API’sini ku
 Google Maps API, başka uygulamalara harita ekleme olanağı sağlar.
 
 API Türleri
+***
 1. Erişim Türüne Göre
 
 Open API (Public API): Herkesin erişimine açık.
@@ -520,7 +520,7 @@ Open API (Public API): Herkesin erişimine açık.
 Partner API: Sadece iş ortaklarına özel.
 
 Private API: Sadece kurum içi kullanım için.
-
+***
 2. Mimarisine Göre
 
 REST API
@@ -544,7 +544,7 @@ gRPC
 Google tarafından geliştirilmiştir.
 
 Hızlı, binary tabanlı, mikroservisler arası iletişim için uygundur.
-
+***
 3. Kullanım Alanına Göre
 
 Web API → İnternet üzerinden erişilen API’ler.
@@ -552,7 +552,7 @@ Web API → İnternet üzerinden erişilen API’ler.
 Library API → Programlama kütüphaneleri için sağlanan API’ler (.NET, Java API).
 
 Operating System API → İşletim sistemleri ile haberleşmeyi sağlayan API’ler (Windows API, Linux system call).
-
+***
 </details>
 
 <details>
@@ -571,7 +571,6 @@ GET /products HTTP/1.1
 Host: example.com
 ```
 Sunucudan ürünler listesini ister.
-
 
 2. POST
 
@@ -1167,5 +1166,86 @@ DELETE FROM Customers WHERE Name = 'Emirhan';
 
 <summary>İlişkisel ve ilişkisel olmayan veri tabanları arasındaki farklar</summary>
 
+1. Veri Yapısı
+
+* İlişkisel Veritabanı (RDBMS):
+  Veriler tablolarda (satır–sütun yapısında) saklanır.
+  Örn: MySQL, PostgreSQL, Oracle.
+
+* İlişkisel Olmayan Veritabanı (NoSQL):
+  Veriler esnek yapılarda saklanır. (Doküman, key-value, grafik, kolon tabanlı)
+  Örn: MongoDB, Redis, Cassandra, Neo4j.
+
+***
+
+2. Şema (Schema)
+
+* RDBMS: Katı şemaya sahiptir. Tablo yapısı önceden tanımlanmalıdır.
+
+* NoSQL: Şemasız veya esnek şemalıdır. Veri yapısı dinamik olarak değiştirilebilir.
+
+***
+
+3. Sorgulama
+
+* RDBMS: Veri sorgulamak için SQL kullanılır.
+
+* NoSQL: Her veritabanı kendi sorgulama yöntemine sahiptir (ör. JSON tabanlı sorgular, API çağrıları).
+
+***
+
+4. Tutarlılık
+
+* RDBMS: ACID (Atomicity, Consistency, Isolation, Durability) kurallarını takip eder. Yani veri bütünlüğü çok güçlüdür.
+
+* NoSQL: Genellikle BASE (Basically Available, Soft state, Eventual consistency) modelini benimser. Yüksek ölçeklenebilirlik için bazen anlık tutarlılıktan ödün verir.
+
+***
+
+5. Ölçeklenebilirlik
+
+* RDBMS: Genelde dikey ölçeklenir (daha güçlü donanım eklenir).
+
+* NoSQL: Yatay ölçeklenir (yeni sunucular eklenerek genişler).
+
+***
+
+6. Kullanım Alanları
+
+* RDBMS: Bankacılık, muhasebe, e-ticaret gibi güçlü veri tutarlılığı gerektiren sistemlerde.
+
+* NoSQL: Sosyal medya, gerçek zamanlı analiz, IoT, büyük veri gibi esneklik ve hız isteyen sistemlerde.
  
+</details>
+
+<details> 
+
+<summary>ORM nedir? Entity Framework Core nedir?</summary>
+
+ORM (Object Relational Mapping), yazılım geliştirmede kullanılan bir tekniktir.
+
+ORM, nesne tabanlı programlama dillerinde kullanılan sınıf ve nesneler ile veritabanındaki tablolar ve kayıtlar arasında bir köprü kurar. Yani veritabanı işlemlerini SQL sorguları yazmadan, doğrudan programlama dilindeki nesneler üzerinden yapmanıza olanak tanır.
+
+Örnek:
+
+Veritabanında Users tablosu varsa, kod tarafında bunun bir User sınıfı olur.
+
+user.Name = "Ali"; gibi bir işlem yaptığınızda ORM bunu SQL sorgusuna çevirip veritabanına kaydeder.
+
+Avantajları:
+
+SQL sorgularını elle yazmaya gerek kalmaz, hata riski azalır.
+
+Kod okunabilirliği artar.
+
+Veritabanı bağımlılığı azalır (farklı veritabanlarına geçiş daha kolay olur).
+
+Kullanılan bazı ORM örnekleri:
+
+.NET dünyasında: Entity Framework, Dapper (yarı ORM)
+
+Java dünyasında: Hibernate
+
+Python’da: SQLAlchemy, Django ORM
+
 </details>
