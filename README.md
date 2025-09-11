@@ -1161,5 +1161,11 @@ UPDATE Customers SET City = 'İstanbul' WHERE Name = 'Emirhan';
 DELETE FROM Customers WHERE Name = 'Emirhan';
 ```
 
+</details>
 
+<details>
+
+<summary>İlişkisel ve ilişkisel olmayan veri tabanları arasındaki farklar</summary>
+
+ 
 </details>
