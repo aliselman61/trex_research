@@ -1300,3 +1300,13 @@ context.Products.Remove(p);
 context.SaveChanges();
 ```
 </details>
+
+<details> 
+
+<summary>LINQ nedir? En çok kullanılan LINQ ifadeleri</summary> 
+
+
+
+
+
+</details>
