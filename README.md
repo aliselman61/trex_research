@@ -1145,4 +1145,19 @@ SQL, ilişkisel veri tabanlarını yönetmek, SQL veri tabanları oluşturmak ve
 
 Hem veri tabanı yöneticileri hem de geliştiriciler SQL’i verileri manipüle etmek ve veri entegrasyon komut dosyaları yazmak için kullanır. Benzer şekilde, veri analistleri de ilişkisel bir veri tabanını derinlemesine analiz etmek için SQL kullanır.
 
+```
+-- 1. SELECT → Veri listeleme
+SELECT * FROM Customers;
+
+-- 2. INSERT → Yeni veri ekleme
+INSERT INTO Customers (Name, City) VALUES ('Emirhan', 'Bursa');
+
+-- 3. UPDATE → Veri güncelleme
+UPDATE Customers SET City = 'İstanbul' WHERE Name = 'Emirhan';
+
+-- 4. DELETE → Veri silme
+DELETE FROM Customers WHERE Name = 'Emirhan';
+```
+
+
 </details>
