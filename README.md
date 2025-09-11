@@ -1255,3 +1255,48 @@ Kullanılan bazı ORM örnekleri:
 Entity Framework Core, son sürümü 9.0.9 olarak yayınlanmış, Microsoft tarafından geliştirilen ve .NET Framework ve .NET Core ile birlikte kullanılabilen bir ORM aracıdır. Entity Framework Core (EF Core) ve Entity Framework (EF 6.x ve önceki sürümler) arasında önemli farklar vardır. EF Core daha hafif ve performanslıdır ve veritabanı platformları için çoklu platform desteği sunar.
 
 </details>
+
+<details>
+
+<summary>DbContext nedir, nasıl kullanılır?</summary>
+
+ 1. * DbContext Nedir?
+
+ EF Core’un ana sınıfıdır ve veritabanına erişimi yönetir.
+
+ Veritabanındaki tablolarla C# sınıflarını eşler (Entity’ler).
+
+ CRUD işlemleri (Create, Read, Update, Delete) için bir ara katman sağlar.
+
+ Veritabanı bağlantısını, sorguları ve değişiklik takibini yönetir.
+
+ 2. * Temel Özellikleri
+
+ DbSet<TEntity>: Her tablo için bir DbSet oluşturulur. Bu, o tabloya erişimi sağlar.
+
+ Change Tracker: Entity üzerinde yapılan değişiklikleri takip eder ve SaveChanges() ile veritabanına yazar.
+
+ LINQ sorguları: DbContext üzerinden LINQ ile veri çekebilirsiniz.
+
+* Nasıl Kullanılınır Örnek:
+  
+```
+using var context = new AppDbContext();
+
+// Veri ekle
+context.Products.Add(new Product { Name="Laptop", Price=12000 });
+context.SaveChanges();
+
+// Veri oku
+var all = context.Products.ToList();
+
+// Güncelle
+var p = context.Products.First();
+p.Price = 11000;
+context.SaveChanges();
+
+// Sil
+context.Products.Remove(p);
+context.SaveChanges();
+```
+</details>
