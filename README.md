@@ -1225,27 +1225,27 @@ DELETE FROM Customers WHERE Name = 'Emirhan';
 ORM (Object Relational Mapping), yazılım geliştirmede kullanılan bir tekniktir.
 
 ORM, nesne tabanlı programlama dillerinde kullanılan sınıf ve nesneler ile veritabanındaki tablolar ve kayıtlar arasında bir köprü kurar. Yani veritabanı işlemlerini SQL sorguları yazmadan, doğrudan programlama dilindeki nesneler üzerinden yapmanıza olanak tanır.
-
+***
 Örnek:
 
-Veritabanında Users tablosu varsa, kod tarafında bunun bir User sınıfı olur.
+* Veritabanında Users tablosu varsa, kod tarafında bunun bir User sınıfı olur.
 
-user.Name = "Ali"; gibi bir işlem yaptığınızda ORM bunu SQL sorgusuna çevirip veritabanına kaydeder.
+* user.Name = "Ali"; gibi bir işlem yaptığınızda ORM bunu SQL sorgusuna çevirip veritabanına kaydeder.
 
 Avantajları:
 
-SQL sorgularını elle yazmaya gerek kalmaz, hata riski azalır.
+* SQL sorgularını elle yazmaya gerek kalmaz, hata riski azalır.
 
-Kod okunabilirliği artar.
+* Kod okunabilirliği artar.
 
-Veritabanı bağımlılığı azalır (farklı veritabanlarına geçiş daha kolay olur).
+* Veritabanı bağımlılığı azalır (farklı veritabanlarına geçiş daha kolay olur).
 
 Kullanılan bazı ORM örnekleri:
 
-.NET dünyasında: Entity Framework, Dapper (yarı ORM)
+* .NET dünyasında: Entity Framework, Dapper (yarı ORM)
 
-Java dünyasında: Hibernate
+* Java dünyasında: Hibernate
 
-Python’da: SQLAlchemy, Django ORM
+* Python’da: SQLAlchemy, Django ORM
 
 </details>
