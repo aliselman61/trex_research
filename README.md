@@ -1377,3 +1377,12 @@ var unique = nums.Distinct();
 ```
 
 </details>
+
+<details>
+
+<summary>LİNQ örnekleri ve SQL açıklamaları</summary>
+
+
+
+ 
+</details>
