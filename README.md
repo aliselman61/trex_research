@@ -1452,3 +1452,12 @@ INNER JOIN Grades g ON s.Id = g.StudentId;
 ```
  
 </details>
+
+<details>
+
+<summary>Code-First ve Database-First yaklaşımı nedir?	</summary>
+
+
+
+ 
+</details>
