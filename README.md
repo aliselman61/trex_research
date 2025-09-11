@@ -1305,8 +1305,75 @@ context.SaveChanges();
 
 <summary>LINQ nedir? En çok kullanılan LINQ ifadeleri</summary> 
 
+* LİNQ ''(Language Integrated Query)'' Nedir
 
+LINQ (Language Integrated Query — Dil ile Tümleşik Sorgu); veri koleksiyonlarını sorgulamak, verileri filtrelemek veya dönüştürmek gibi işlemleri kolaylaştıran güçlü bir teknolojidir. C# 3.0 sürümü ile kullanıma başlamıştır. LINQ, C# ve diğer .NET programlama dillerinde kullanılarak veri kaynakları üzerinde sorgular oluşturmayı, veriye erişimi, filtrelemeyi, sıralamayı, gruplamayı, birleştirmeyi ve dönüştürmeyi sağlar.
 
+* En çok kullanılan LİNQ ifadeleri
 
+1. Where
+
+* Koşula göre filtreleme yapar.
+```
+int[] numbers = { 1, 2, 3, 4, 5 };
+var evenNumbers = numbers.Where(n => n % 2 == 0);
+```
+2. Select
+
+* Veriyi dönüştürmek için kullanılır.
+```
+var squares = numbers.Select(n => n * n);
+```
+3. OrderBy / OrderByDescending
+
+* Veriyi artan veya azalan sıraya göre sıralar.
+```
+var ordered = numbers.OrderBy(n => n);
+var descending = numbers.OrderByDescending(n => n);
+```
+4. First / FirstOrDefault
+
+* Koşula uyan ilk elemanı döndürür.
+```
+var firstEven = numbers.First(n => n % 2 == 0);
+var firstEvenOrDefault = numbers.FirstOrDefault(n => n % 2 == 0);
+```
+5. Last / LastOrDefault
+
+* Koşula uyan son elemanı döndürür.
+```
+var lastEven = numbers.Last(n => n % 2 == 0);
+```
+6. Single / SingleOrDefault
+
+* Sadece bir elemanın döndüğü durumlar için kullanılır.
+```
+var singleItem = numbers.Single(n => n == 3);
+```
+7. Count
+
+* Eleman sayısını verir.
+```
+var evenCount = numbers.Count(n => n % 2 == 0);
+```
+8. Any
+
+* Koşula uyan en az bir eleman var mı kontrol eder.
+```
+bool hasEven = numbers.Any(n => n % 2 == 0);
+```
+9. All
+
+* Tüm elemanların koşulu sağlayıp sağlamadığını kontrol eder.
+```
+bool allPositive = numbers.All(n => n > 0);
+```
+10. Distinct
+
+* Tekrarlayan elemanları kaldırır.
+```
+int[] nums = { 1, 2, 2, 3, 3, 3 };
+var unique = nums.Distinct();
+```
 
 </details>
