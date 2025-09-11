@@ -1248,4 +1248,10 @@ Kullanılan bazı ORM örnekleri:
 
 * Python’da: SQLAlchemy, Django ORM
 
+***
+
+Entity Framework Core Nedir?
+
+Entity Framework Core, son sürümü 9.0.9 olarak yayınlanmış, Microsoft tarafından geliştirilen ve .NET Framework ve .NET Core ile birlikte kullanılabilen bir ORM aracıdır. Entity Framework Core (EF Core) ve Entity Framework (EF 6.x ve önceki sürümler) arasında önemli farklar vardır. EF Core daha hafif ve performanslıdır ve veritabanı platformları için çoklu platform desteği sunar.
+
 </details>
