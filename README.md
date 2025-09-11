@@ -1382,7 +1382,73 @@ var unique = nums.Distinct();
 
 <summary>LİNQ örnekleri ve SQL açıklamaları</summary>
 
+1. * Where – Filtreleme
 
+* LINQ:
+```
+var evenNumbers = numbers.Where(n => n % 2 == 0);
+```
 
+Açıklama: Dizideki çift sayıları seçer.
+SQL Karşılığı:
+```
+SELECT * FROM Numbers WHERE Value % 2 = 0;
+```
+2. * Select – Dönüştürme
+
+* LINQ:
+```
+var squares = numbers.Select(n => n * n);
+```
+
+Açıklama: Her sayının karesini alır.
+SQL Karşılığı:
+```
+SELECT Value * Value AS Square FROM Numbers;
+```
+3. * OrderBy – Sıralama
+
+* LINQ:
+```
+var ascending = numbers.OrderBy(n => n);
+```
+
+Açıklama: Sayıları artan sıraya göre sıralar.
+SQL Karşılığı:
+```
+SELECT * FROM Numbers ORDER BY Value ASC;
+```
+4. * GroupBy – Gruplama
+
+* LINQ:
+```
+var grouped = numbers.GroupBy(n => n % 2 == 0 ? "Even" : "Odd");
+```
+
+Açıklama: Sayıları çift ve tek olarak gruplar.
+SQL Karşılığı:
+```
+SELECT CASE WHEN Value % 2 = 0 THEN 'Even' ELSE 'Odd' END AS GroupKey,
+       COUNT(*) 
+FROM Numbers
+GROUP BY CASE WHEN Value % 2 = 0 THEN 'Even' ELSE 'Odd' END;
+```
+5. * Join – İki koleksiyonu birleştirme
+
+* LINQ:
+```
+var studentGrades = students.Join(grades,
+                                  s => s.Id,
+                                  g => g.StudentId,
+                                  (s, g) => new { s.Name, g.Grade });
+
+```
+Açıklama: Öğrenciler ve notlarını birleştirir.
+SQL Karşılığı:
+```
+SELECT s.Name, g.Grade
+FROM Students s
+INNER JOIN Grades g ON s.Id = g.StudentId;
+```
  
 </details>
