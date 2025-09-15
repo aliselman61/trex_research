@@ -1483,9 +1483,34 @@ Mevcut bir veritabanını kullanan projelerde veya veritabanı tasarımının DB
 
 <summary>Temel SQL sorguları: SELECT, INSERT, UPDATE, DELETE</summary>
 
+1.SELECT
+
+Veritabanından veri okumak için kullanılır.
+```
+SELECT * FROM Employees;  -- Tüm kolonları getirir
+SELECT Name, Salary FROM Employees WHERE Salary > 5000;  -- Şartlı veri
+```
+2.INSERT
+
+Tabloya yeni kayıt eklemek için kullanılır.
+```
+INSERT INTO Employees (Name, Position, Salary)
+VALUES ('Ali', 'Developer', 7500);
+```
+3.UPDATE
+
+Mevcut kayıtları güncellemek için kullanılır.
+```
+UPDATE Employees
+SET Salary = 8000
+WHERE Name = 'Ali';
+```
+4.DELETE
+
+Tablodan veri silmek için kullanılır.
+```
+DELETE FROM Employees WHERE Name = 'Ali';
+```
 
 
-
-
- 
 </details>
