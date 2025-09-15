@@ -1538,6 +1538,51 @@ DELETE FROM Employees WHERE Name = 'Ali';
 
 * JSON Web Token (JWT), tarafların birbirleri arasındaki veri alışverişini ve bunun doğrulamasını sağlayan JSON tabanlı RFC 7519'de tanımlanmış açık bir standarttır. Örneğin bir sunucu, kullanıcının yönetici ayrıcalıklarına sahip olduğunu belirten bir anahtar (token) oluşturabilir ve bunu kullanıcıya gönderebilir. Kullanıcı daha sonra bu anahtar ile kendisine tanımlanmış olan yönetici yetkisini bir istemcide kullanabilir ve bütün taraflar tarafından yetkisi doğrulanabilir
 
+* JWT yapısının temel bileşenleri
+  
+JWT (JSON Web Token) üç ana bileşenden oluşur ve bu bileşenler nokta (.) ile birbirinden ayrılır:
+
+Header.Payload.Signature
+
+1. Header (Başlık)
+
+Token tipini ve kullanılan imzalama algoritmasını belirtir.
+
+JSON formatındadır.
+
+Örnek:
+```
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+```
+2. Payload (Yük)
+
+Kullanıcıya veya oturuma ait verileri (claims) içerir.
+
+Kimlik bilgileri, roller, token geçerlilik süreleri gibi bilgiler burada yer alır.
+
+Örnek:
+```
+{
+  "sub": "1234567890",
+  "name": "emco",
+  "admin": true,
+  "exp": 1712345678
+}
+```
+3. Signature (İmza)
+
+Header ve Payload Base64Url formatında encode edilir, ardından gizli bir anahtar ile (HMAC SHA veya RSA gibi algoritmalarla) imzalanır.
+
+Token’ın değiştirilip değiştirilmediğini doğrular.
 
  
+</details>
+
+<details>  
+
+<summary>OAuth, OAuth2.0, OpenIddict, OpenID nedir? Aralarındaki ilişki </summary>
+
 </details>
