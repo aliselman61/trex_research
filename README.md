@@ -1536,7 +1536,7 @@ DELETE FROM Employees WHERE Name = 'Ali';
 
 <summary>JWT (JSON Web Token) nedir, nasıl çalışır?</summary>
 
-
+* JSON Web Token (JWT), tarafların birbirleri arasındaki veri alışverişini ve bunun doğrulamasını sağlayan JSON tabanlı RFC 7519'de tanımlanmış açık bir standarttır. Örneğin bir sunucu, kullanıcının yönetici ayrıcalıklarına sahip olduğunu belirten bir anahtar (token) oluşturabilir ve bunu kullanıcıya gönderebilir. Kullanıcı daha sonra bu anahtar ile kendisine tanımlanmış olan yönetici yetkisini bir istemcide kullanabilir ve bütün taraflar tarafından yetkisi doğrulanabilir
 
 
  
