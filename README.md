@@ -1529,6 +1529,15 @@ DELETE FROM Employees WHERE Name = 'Ali';
 | Amaç    | Kimlik doğrulamak | Yetki kontrolü yapmak |
 | Ne zaman? | Sisteme giriş esnasında | Giriş yaptıktan sonra |
 | Örnek   | Kullanıcı adı ve şifre girmek | Admin paneline erişim izni kontrolü |
+ 
+</details>
+
+<details>
+
+<summary>JWT (JSON Web Token) nedir, nasıl çalışır?</summary>
+
+
+
 
  
 </details>
