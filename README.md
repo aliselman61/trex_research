@@ -1467,6 +1467,8 @@ Genelde yeni projelerde veya veritabanı tasarımını sıfırdan yapmak istedi�
 Önceden hazırlanmış bir veritabanınız vardır. EF bu veritabanındaki tabloları, alanları ve ilişkileri otomatik olarak class’lara dönüştürür (reverse engineering). Kod tarafında model oluşturma ihtiyacı azalır.
 Mevcut bir veritabanını kullanan projelerde veya veritabanı tasarımının DBA tarafından yapıldığı durumlarda tercih edilir.
 
+* Code-First vs DB-First karşılaştırması
+
 | Özellik               | Code-First                          | Database-First                     |
 |-----------------------|------------------------------------|-----------------------------------|
 | Başlangıç Noktası      | Kod tarafında modeller oluşturulur | Mevcut veritabanı kullanılır       |
