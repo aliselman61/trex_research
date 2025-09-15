@@ -1517,10 +1517,18 @@ DELETE FROM Employees WHERE Name = 'Ali';
 
 ## 6. Güvenlik ve Performans
 
-<details> 
- 
-<summary>Authentication vs Authorization nedir?</summary> 
- 
- 
- 
 <details>
+
+<summary>Authentication vs Authorization nedir?</summary>
+
+ * Authentication vs Authorization Nedir?
+
+| Özellik | Authentication (Kimlik Doğrulama) | Authorization (Yetkilendirme) |
+|---------|-----------------------------------|-------------------------------|
+| Tanım   | Kullanıcının kim olduğunu doğrular | Kullanıcının hangi kaynaklara veya işlemlere erişebileceğini belirler |
+| Amaç    | Kimlik doğrulamak | Yetki kontrolü yapmak |
+| Ne zaman? | Sisteme giriş esnasında | Giriş yaptıktan sonra |
+| Örnek   | Kullanıcı adı ve şifre girmek | Admin paneline erişim izni kontrolü |
+
+ 
+</details>
