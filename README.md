@@ -1514,3 +1514,13 @@ DELETE FROM Employees WHERE Name = 'Ali';
 
 
 </details>
+
+## 6. Güvenlik ve Performans
+
+<details> 
+ 
+<summary>Authentication vs Authorization nedir?</summary> 
+ 
+ 
+ 
+<details>
