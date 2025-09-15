@@ -1457,7 +1457,15 @@ INNER JOIN Grades g ON s.Id = g.StudentId;
 
 <summary>Code-First ve Database-First yaklaşımı nedir?	</summary>
 
+* Code-First
 
+Önce uygulamanın model sınıflarını (entity class) kod tarafında oluşturursunuz. EF bu sınıfları temel alarak veritabanını kendisi üretir ve migration ile güncelleyebilirsiniz. Veritabanı tasarımını geliştirici kontrol eder.
+Genelde yeni projelerde veya veritabanı tasarımını sıfırdan yapmak istediğiniz durumlarda tercih edilir.
+
+* Database-First
+
+Önceden hazırlanmış bir veritabanınız vardır. EF bu veritabanındaki tabloları, alanları ve ilişkileri otomatik olarak class’lara dönüştürür (reverse engineering). Kod tarafında model oluşturma ihtiyacı azalır.
+Mevcut bir veritabanını kullanan projelerde veya veritabanı tasarımının DBA tarafından yapıldığı durumlarda tercih edilir.
 
  
 </details>
