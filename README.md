@@ -1546,9 +1546,9 @@ Header.Payload.Signature
 
 1. Header (Başlık)
 
-Token tipini ve kullanılan imzalama algoritmasını belirtir.
+* Token tipini ve kullanılan imzalama algoritmasını belirtir.
 
-JSON formatındadır.
+* JSON formatındadır.
 
 Örnek:
 ```
@@ -1559,9 +1559,9 @@ JSON formatındadır.
 ```
 2. Payload (Yük)
 
-Kullanıcıya veya oturuma ait verileri (claims) içerir.
+* Kullanıcıya veya oturuma ait verileri (claims) içerir.
 
-Kimlik bilgileri, roller, token geçerlilik süreleri gibi bilgiler burada yer alır.
+* Kimlik bilgileri, roller, token geçerlilik süreleri gibi bilgiler burada yer alır.
 
 Örnek:
 ```
@@ -1574,9 +1574,9 @@ Kimlik bilgileri, roller, token geçerlilik süreleri gibi bilgiler burada yer a
 ```
 3. Signature (İmza)
 
-Header ve Payload Base64Url formatında encode edilir, ardından gizli bir anahtar ile (HMAC SHA veya RSA gibi algoritmalarla) imzalanır.
+* Header ve Payload Base64Url formatında encode edilir, ardından gizli bir anahtar ile (HMAC SHA veya RSA gibi algoritmalarla) imzalanır.
 
-Token’ın değiştirilip değiştirilmediğini doğrular.
+* Token’ın değiştirilip değiştirilmediğini doğrular.
 
  
 </details>
