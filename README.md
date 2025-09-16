@@ -40,7 +40,7 @@
 
  Örnek kullanım:
  
- git init
+ git init 
 
 
  Bu komut çalıştırıldığında klasörde .git isimli gizli bir dosya oluşur ve bu dosya projenin tüm sürüm kontrol bilgilerini içerir.
@@ -1583,6 +1583,72 @@ Header.Payload.Signature
 
 <details>  
 
-<summary>OAuth, OAuth2.0, OpenIddict, OpenID nedir? Aralarındaki ilişki </summary>
+<summary>OAuth, OAuth2.0, OpenIddict, OpenID nedir? Aralarındaki ilişki</summary>
+
+# OAuth, OAuth 2.0, OpenID, OpenID Connect ve OpenIddict Nedir?
+
+Günümüzde web ve mobil uygulamalarda **kimlik doğrulama (authentication)** ve **yetkilendirme (authorization)** kritik bir ihtiyaçtır. Bu noktada farklı standartlar ve kütüphaneler devreye girer. Bu yazıda **OAuth**, **OAuth 2.0**, **OpenID**, **OpenID Connect** ve **OpenIddict** kavramlarını ve aralarındaki ilişkiyi inceleyeceğiz.
+
+## OAuth (1.0)
+
+* 2007’de geliştirilen ilk standarttır.
+   
+* Kullanıcıların bir uygulamadaki (kaynak sunucusu) verilerine başka bir uygulamanın erişmesine izin verir.  
+
+* Yalnızca yetkilendirme sağlar, kimlik doğrulama yapmaz.  
+
+* Karmaşık yapısı nedeniyle zamanla OAuth 2.0’a bırakmıştır.
+
+## OAuth 2.0
+
+* OAuth’un modern ve esnek versiyonudur.  
+
+* Yetkilendirme çerçevesidir, kimlik doğrulama yapmaz.  
+
+* Access Token ve Refresh Token kavramlarını getirir.  
+
+* Google, Microsoft, Facebook API erişimlerinde standart olarak kullanılır.
+
+## OpenID
+
+* Kullanıcıların tek bir kimlik sağlayıcısı (örneğin Google veya Yahoo) ile farklı sitelere giriş yapmasını sağlayan eski bir kimlik doğrulama protokolüdür.
+ 
+* Sadece kimlik doğrulama yapar, yetkilendirme sağlamaz.
+
+## OpenID Connect (OIDC)
+
+* OAuth 2.0 üzerine inşa edilmiş modern bir kimlik doğrulama katmanıdır.  
+
+* OAuth 2.0’ın yetkilendirme yeteneklerine kimlik doğrulama ekler.  
+
+* ID Token kavramını getirir.  
+
+* Günümüzde Google Sign-In, Microsoft Sign-In gibi servislerde kullanılan standarttır.
+
+## OpenIddict
+
+* ASP.NET Core projelerinde OAuth 2.0 ve OpenID Connect standartlarını kolayca uygulamak için kullanılan açık kaynak bir kütüphanedir.  
+
+* Kendi kimlik/yetki sunucunuzu oluşturmanıza ve modern standartları uygulamanıza olanak tanır.
+
+## Aralarındaki İlişki
+
+| Teknoloji          | Amacı                     | Yetkilendirme | Kimlik Doğrulama |
+|-------------------|--------------------------|---------------|-----------------|
+| **OAuth (1.0)**   | Erişim izni sağlama       | Evet          | Hayır           |
+| **OAuth 2.0**     | Modern yetkilendirme      | Evet          | Hayır           |
+| **OpenID**        | Kimlik doğrulama (eski)   | Hayır         | Evet            |
+| **OpenID Connect**| OAuth 2.0 + Kimlik doğrulama | Evet        | Evet            |
+| **OpenIddict**    | Bu standartları .NET’te kolayca uygulama | Evet | Evet         |
+
+</details>
+
+<details> 
+
+<summary>Performans artımı için ne yapılabilir? (AsNoTracking, IAsyncEnumerable, caching, profiling, redis)</summary>
+
+
+
+
 
 </details>
