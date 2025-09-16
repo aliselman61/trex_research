@@ -1821,8 +1821,42 @@ app.UseExceptionHandler(app =>
 
 <summary>UseExceptionHandler ve ILogger nasıl kullanılır?</summary>
 
+```
+Global Hata Yakalama
+app.UseExceptionHandler("/error");
+```
 
+* Ne işe yarar: Yakalanmamış tüm hataları tek bir endpoint’e yönlendirir.
+
+Hata Loglama
+```
+[Route("error")]
+public IActionResult Error([FromServices] ILogger<ErrorController> logger)
+{
+    var ex = HttpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
+    if (ex != null) logger.LogError(ex, "Hata oluştu");
+    return Problem(statusCode: 500);
+}
+```
+
+* Ne işe yarar: Yakalanan hatayı loglar ve kullanıcıya güvenli bir hata mesajı döner.
+
+Tek Middleware ile
+```
+app.UseExceptionHandler(a => a.Run(async ctx =>
+{
+    var logger = ctx.RequestServices.GetRequiredService<ILogger<Program>>();
+    var ex = ctx.Features.Get<IExceptionHandlerFeature>()?.Error;
+    if (ex != null) logger.LogError(ex, "Global hata");
+    ctx.Response.StatusCode = 500;
+    await ctx.Response.WriteAsync("Hata oluştu");
+}));
+```
+
+* Ne işe yarar: Hem hatayı loglar hem de kullanıcıya basit bir mesaj gösterir, tek noktadan yönetim sağlar.
 
 
  
 </details>
+
+
