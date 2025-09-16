@@ -1,4 +1,9 @@
  # trex_research
+
+ ***
+#### *Programlama ile ilgili kısa bi araştırma raporu
+***
+
  
 ## 1. Modern Yazılım Geliştirme Pratikleri
 
