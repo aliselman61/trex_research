@@ -1704,14 +1704,15 @@ Dağıtık ve yüksek trafikli uygulamalarda Redis gibi bir önbellek sistemiyle
 2. Log Seviyesi Nedir?
 
 
-| Log Seviyesi    | Açıklama                                      |
-|-----------------|-----------------------------------------------|
-| Trace           | Çok detaylı, genellikle debug için kullanılır |
-| Debug           | Geliştiriciye yönelik hata ve durum bilgisi  |
-| Information     | Normal çalışma bilgileri, kullanıcı aktiviteleri |
-| Warning         | Potansiyel sorunlar veya dikkat edilmesi gereken durumlar |
-| Error           | Hata oluştu, işlem tamamlanamadı             |
-| Critical        | Kritik hata, sistemin çalışmasını etkiler    |
+| Log Seviyesi    | Açıklama                                                                                   |
+|-----------------|--------------------------------------------------------------------------------------------|
+| Trace           | Çok detaylı bilgi; genellikle hataları veya işlemleri adım adım izlemek için kullanılır    |
+| Debug           | Geliştiriciye yönelik bilgi; hata ayıklama ve sistem durumunu anlamak için kullanılır      |
+| Information     | Normal çalışma bilgileri; kullanıcı aktiviteleri ve sistem olayları kaydedilir             |
+| Warning         | Potansiyel sorunlar veya ileride hataya yol açabilecek durumlar hakkında uyarı verir        |
+| Error           | Hata oluştu; işlem tamamlanamadı veya beklenmedik bir durum meydana geldi                  |
+| Critical        | Kritik hata; sistemin çalışmasını veya uygulamanın devamını etkileyen durumları gösterir   |
+
 
   * Log seviyesi, uygulamadaki logların önem derecesini belirler ve hangi bilgilerin kaydedileceğini kontrol etmeye yarar.
 </details>
