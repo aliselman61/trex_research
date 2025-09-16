@@ -1854,9 +1854,7 @@ app.UseExceptionHandler(a => a.Run(async ctx =>
 ```
 
 * Ne işe yarar: Hem hatayı loglar hem de kullanıcıya basit bir mesaj gösterir, tek noktadan yönetim sağlar.
-
-
  
 </details>
 
-
+## 8. Yazılım Geliştirme Prensipleri
