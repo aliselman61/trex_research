@@ -1647,8 +1647,24 @@ Günümüzde web ve mobil uygulamalarda **kimlik doğrulama (authentication)** v
 
 <summary>Performans artımı için ne yapılabilir? (AsNoTracking, IAsyncEnumerable, caching, profiling, redis)</summary>
 
+1. * AsNoTracking:
+     
+Okuma amaçlı sorgularda AsNoTracking() kullanmak EF Core’un ChangeTracker özelliğini devre dışı bırakır. Bu sayede gereksiz bellek ve işlem yükü azalır. Özellikle listeleme veya raporlama gibi senaryolarda belirgin performans kazandırır.
 
+2. * IAsyncEnumerable:
+     
+Büyük veri setlerini tek seferde belleğe almak yerine IAsyncEnumerable ile satır satır (streaming) çekmek hem bellek kullanımını hem de ilk yanıt süresini düşürür. Bu yöntem, sürekli veri işlenen veya çok büyük sorgularda işe yarar.
 
+3. * Caching (Önbellekleme):
+     
+Sık kullanılan verileri tekrar tekrar veritabanından çekmek yerine önbellekte tutmak en etkili yöntemlerden biridir. Küçük uygulamalarda In-Memory Cache, ölçekli yapılarda ise Redis gibi Distributed Cache tercih edilmelidir.
 
+4. * Profiling (İzleme):
+     
+Performansı artırmanın ilk adımı darboğazları tespit etmektir. MiniProfiler, EF Core logları veya SQL Profiler ile yavaş sorguları ve gereksiz işlemleri görebilir, buna göre optimize edebilirsiniz.
+
+5. * Redis Kullanımı:
+     
+Dağıtık ve yüksek trafikli uygulamalarda Redis gibi bir önbellek sistemiyle veriyi sunucu dışında tutmak, veritabanı yükünü ciddi ölçüde azaltır ve yanıt sürelerini iyileştirir.
 
 </details>
