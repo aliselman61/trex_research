@@ -1758,3 +1758,61 @@ app.Run();
 * Log sağlayıcıları: Console, Debug, EventLog, dosya (Serilog/NLog). 
 
 </details>
+
+<details>
+
+<summary>Global exception handling nasıl yapılır?</summary>
+
+ASP.NET Core’da global exception handling, tüm hataları tek bir noktada yakalamak için kullanılır. İki yaygın yöntem:
+
+1. * Middleware ile
+```
+public class GlobalExceptionMiddleware
+{
+    private readonly RequestDelegate _next;
+    private readonly ILogger<GlobalExceptionMiddleware> _logger;
+
+    public GlobalExceptionMiddleware(RequestDelegate next, ILogger<GlobalExceptionMiddleware> logger)
+    {
+        _next = next;
+        _logger = logger;
+    }
+
+    public async Task Invoke(HttpContext context)
+    {
+        try
+        {
+            await _next(context);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Hata yakalandı.");
+            context.Response.StatusCode = 500;
+            context.Response.ContentType = "application/json";
+            await context.Response.WriteAsync("{\"message\":\"Bir hata oluştu.\"}");
+        }
+    }
+}
+
+// Program.cs
+app.UseMiddleware<GlobalExceptionMiddleware>();
+```
+
+2. * UseExceptionHandler ile
+
+ ```  
+app.UseExceptionHandler(app =>
+{
+    app.Run(async context =>
+    {
+        context.Response.StatusCode = 500;
+        context.Response.ContentType = "application/json";
+        await context.Response.WriteAsync("{\"message\":\"Bir hata oluştu.\"}");
+    });
+});
+```
+
+Özet: Tek noktadan hataları yakalayabilir, loglayabilir ve kullanıcıya mesaj gösterebilirsiniz.
+
+ 
+</details>
