@@ -1680,3 +1680,15 @@ Dağıtık ve yüksek trafikli uygulamalarda Redis gibi bir önbellek sistemiyle
 | Profiling      | Yavaş sorguları ve darboğazları tespit etmek       | Tüm uygulama             | Optimizasyon fırsatları sağlar |
 
 </details>
+
+## 7. Logging ve Hata Yönetimi
+
+<details>
+ 
+<summary>Neden loglama yapılır? Log seviyesi nedir?</summary>
+
+
+
+
+ 
+</details>
