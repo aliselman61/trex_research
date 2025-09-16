@@ -1722,7 +1722,39 @@ Dağıtık ve yüksek trafikli uygulamalarda Redis gibi bir önbellek sistemiyle
 
 <summary>ASP.NET Core'da logging altyapısı</summary>
 
+* ASP.NET Core’da logging, uygulamanın çalışmasını takip etmek ve hataları kaydetmek için kullanılır. Temel yapı ILogger<T> ile sağlanır ve seviyeleri şunlardır: Trace, Debug, Information, Warning, Error, Critical.
 
+Kullanım örneği:
 
- 
+```
+public class HomeController : Controller
+{
+    private readonly ILogger<HomeController> _logger;
+    public HomeController(ILogger<HomeController> logger) => _logger = logger;
+
+    public IActionResult Index()
+    {
+        _logger.LogInformation("Index açıldı");
+        _logger.LogWarning("Uyarı!");
+        _logger.LogError("Hata!");
+        return View();
+    }
+}
+```
+
+Program.cs’de yapılandırma:
+
+```
+var builder = WebApplication.CreateBuilder(args);
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+builder.Logging.SetMinimumLevel(LogLevel.Information);
+
+var app = builder.Build();
+app.Run();
+```
+
+* Log sağlayıcıları: Console, Debug, EventLog, dosya (Serilog/NLog). 
+
 </details>
