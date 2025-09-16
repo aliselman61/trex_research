@@ -1858,3 +1858,11 @@ app.UseExceptionHandler(a => a.Run(async ctx =>
 </details>
 
 ## 8. Yazılım Geliştirme Prensipleri
+
+<details>
+
+<summary>SOLID prensipleri: Her biri için kısa açıklama ve örnek</summary>
+
+
+ 
+</details>
