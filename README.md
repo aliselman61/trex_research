@@ -1687,8 +1687,31 @@ Dağıtık ve yüksek trafikli uygulamalarda Redis gibi bir önbellek sistemiyle
  
 <summary>Neden loglama yapılır? Log seviyesi nedir?</summary>
 
+1. Neden Loglama Yapılır?
 
+   * Loglama, uygulamanın çalışması sırasında gerçekleşen olayların kaydedilmesidir. Amaçları:
 
-
+   * Hata takibi: Uygulamada oluşan hataların kaynağını tespit etmek.
  
+   * Performans izleme: Uzun süren işlemleri veya darboğazları belirlemek.
+
+   * Olay kayıtları: Kullanıcı aktiviteleri veya sistem olaylarını kayıt altına almak.
+
+   * Debug ve geliştirme: Kodun doğru çalışıp çalışmadığını anlamak.
+
+   * Kısaca, loglama uygulamanın “görünmeyen gözlüğü” gibidir.
+
+2. Log Seviyesi Nedir?
+
+
+| Log Seviyesi    | Açıklama                                      |
+|-----------------|-----------------------------------------------|
+| Trace           | Çok detaylı, genellikle debug için kullanılır |
+| Debug           | Geliştiriciye yönelik hata ve durum bilgisi  |
+| Information     | Normal çalışma bilgileri, kullanıcı aktiviteleri |
+| Warning         | Potansiyel sorunlar veya dikkat edilmesi gereken durumlar |
+| Error           | Hata oluştu, işlem tamamlanamadı             |
+| Critical        | Kritik hata, sistemin çalışmasını etkiler    |
+
+  * Log seviyesi, uygulamadaki logların önem derecesini belirler ve hangi bilgilerin kaydedileceğini kontrol etmeye yarar.
 </details>
