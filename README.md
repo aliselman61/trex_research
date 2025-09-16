@@ -1668,3 +1668,15 @@ Performansı artırmanın ilk adımı darboğazları tespit etmektir. MiniProfil
 Dağıtık ve yüksek trafikli uygulamalarda Redis gibi bir önbellek sistemiyle veriyi sunucu dışında tutmak, veritabanı yükünü ciddi ölçüde azaltır ve yanıt sürelerini iyileştirir.
 
 </details>
+
+<details>
+
+<summary>Performans için önerilen en az 3 teknik ve açıklamaları</summary>
+ 
+| Teknik         | Amacı                                               | Kullanım Alanı            | Avantajı                     |
+|----------------|----------------------------------------------------|--------------------------|------------------------------|
+| AsNoTracking   | EF Core’da verilerin takip edilmesini devre dışı bırakmak | Sadece okuma sorguları   | Daha az bellek kullanımı, hızlı sorgu |
+| Caching        | Sık kullanılan verileri önbellekte tutmak          | Tekrarlanan veri sorguları | DB yükünü azaltır, yanıt süresini kısaltır |
+| Profiling      | Yavaş sorguları ve darboğazları tespit etmek       | Tüm uygulama             | Optimizasyon fırsatları sağlar |
+
+</details>
