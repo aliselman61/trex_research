@@ -1715,4 +1715,14 @@ Dağıtık ve yüksek trafikli uygulamalarda Redis gibi bir önbellek sistemiyle
 
 
   * Log seviyesi, uygulamadaki logların önem derecesini belirler ve hangi bilgilerin kaydedileceğini kontrol etmeye yarar.
+    
+</details>
+
+<details>
+
+<summary>ASP.NET Core'da logging altyapısı</summary>
+
+
+
+ 
 </details>
