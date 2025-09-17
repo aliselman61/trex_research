@@ -2152,10 +2152,38 @@ public class ShapeFactory
     }
 }
 ```
-
-
-
-
-
  
+</details>
+
+<details>
+
+<summary>Clean Code nedir, neden önemlidir?</summary>
+<br>
+
+* Clean Code nedir
+
+Clean Code kavramı, Türkçeye “Temiz Kod” olarak çevrilir. Robert Cecil Martin'in "Clean Code: A Handbook of Agile Software Craftsmanship" adlı kitabında bu kavramdan ve kavramın ilkelerinden bahsedilmiştir. Bu kitaptan sonra da Clean Code kavramı yaygınlaşmıştır. Ancak, Clean Code kavramı ve ilkeleri çok daha eskidir.
+
+Sanıldığının aksine Clean Code, katı kurallar içermez. Clean Code; insanlar tarafından anlaşılması ve değiştirilmesi kolay kod yazmayı ifade eden bir dizi ilkedir. 
+
+Anlaşılabilir kod yazmak, ister kodun geliştiricisi isterse de başka bir geliştirici tarafından kolayca anlaşılabileceği anlamına gelir. Tüm kodlar mantıklı ve açık bir şekilde yazılır. Kodun farklı bölümleri arasındaki bağlantılar açık ve nettir. Herhangi bir geliştirici tarafından her işlevin, yöntemin ve değişkenin görevi kolayca anlaşılır. 
+
+* Clean Code neden Önemlidir
+
+Geliştiriciler tarafından anlaşılmayan kodlar zamanla maliyeti artırır. Clean Code yazmak, maliyet tasarrufu sağlar.
+
+Geliştiriciler kodu anlamaya çalışırken zamanının çoğunu burada harcar. Bu zaman gelecekteki her görevinden gereğinden fazla saatler alır. Clean Code; güvenilirliği, esnekliği ve performansı artırır. Bu nedenle de yazılım dünyasında önemli olan bir konudur.
+
+Geliştiriciler kodu yazmaktan çok okumakta zaman harcarlar. Geliştiriciler genellikle mevcut kodu anlamaya çalışmak yerine kodu yeniden yazmayı tercih eder. Bu da zaman kaybına neden olur. İyi yazılmış, test edilmiş ve anlaşılır kod yazmak için zaman ayıran bir geliştirici, ilerleyen zamanda sayısız saat, gün ve hafta kazanır. Bu nedenle, her geliştirici kodla ilgilenmeli ve mümkün olduğunca kodu anlaşılır hale getirmelidir. 
+
+
+
+
+
+
+
+
+
+
+
 </details>
