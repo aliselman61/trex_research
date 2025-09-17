@@ -1973,3 +1973,120 @@ class App
 }
 ```
 </details>
+
+<details>
+
+<summary>Design Patterns: Singleton, Repository, Factory</summary>
+
+1. Singleton Pattern
+
+Amaç:
+Bir sınıfın sadece tek bir örneğinin (instance) oluşturulmasını sağlar ve bu örneğe global erişim noktası sunar.
+
+Örnek (C#):
+```
+public class Logger
+{
+    private static Logger _instance;
+    private Logger() { }
+
+    public static Logger Instance
+    {
+        get
+        {
+            if (_instance == null)
+                _instance = new Logger();
+            return _instance;
+        }
+    }
+
+    public void Log(string message)
+    {
+        Console.WriteLine(message);
+    }
+}
+```
+
+Kullanım:
+```
+Logger.Instance.Log("Mesaj yazıldı");
+```
+
+2. Repository Pattern
+
+Amaç:
+Veri erişim işlemlerini (CRUD) soyutlayarak, uygulamanın veri katmanını iş katmanından ayırır.
+
+Örnek (C#):
+```
+public interface IProductRepository
+{
+    IEnumerable<Product> GetAll();
+    Product GetById(int id);
+    void Add(Product product);
+}
+
+public class ProductRepository : IProductRepository
+{
+    private readonly AppDbContext _context;
+    public ProductRepository(AppDbContext context)
+    {
+        _context = context;
+    }
+
+    public IEnumerable<Product> GetAll() => _context.Products.ToList();
+    public Product GetById(int id) => _context.Products.Find(id);
+    public void Add(Product product) => _context.Products.Add(product);
+}
+```
+
+Kullanım:
+```
+var repo = new ProductRepository(context);
+var allProducts = repo.GetAll();
+```
+3. Factory Pattern
+
+Amaç:
+Nesne oluşturma sürecini merkezileştirerek, istemci kodun hangi sınıfı oluşturacağını bilmesini önler.
+
+Örnek (C#):
+```
+public abstract class Shape
+{
+    public abstract void Draw();
+}
+
+public class Circle : Shape
+{
+    public override void Draw() => Console.WriteLine("Daire çizildi");
+}
+
+public class Rectangle : Shape
+{
+    public override void Draw() => Console.WriteLine("Dikdörtgen çizildi");
+}
+
+public class ShapeFactory
+{
+    public static Shape CreateShape(string type)
+    {
+        return type switch
+        {
+            "Circle" => new Circle(),
+            "Rectangle" => new Rectangle(),
+            _ => throw new ArgumentException("Geçersiz şekil türü")
+        };
+    }
+}
+```
+
+Kullanım:
+```
+Shape shape = ShapeFactory.CreateShape("Circle");
+shape.Draw();
+```
+
+
+ 
+</details>
