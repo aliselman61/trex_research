@@ -2176,14 +2176,55 @@ Geliştiriciler kodu anlamaya çalışırken zamanının çoğunu burada harcar.
 
 Geliştiriciler kodu yazmaktan çok okumakta zaman harcarlar. Geliştiriciler genellikle mevcut kodu anlamaya çalışmak yerine kodu yeniden yazmayı tercih eder. Bu da zaman kaybına neden olur. İyi yazılmış, test edilmiş ve anlaşılır kod yazmak için zaman ayıran bir geliştirici, ilerleyen zamanda sayısız saat, gün ve hafta kazanır. Bu nedenle, her geliştirici kodla ilgilenmeli ve mümkün olduğunca kodu anlaşılır hale getirmelidir. 
 
+</details>
 
+<details>
 
+<summary>Layered, Clean Architecture, Microservices, Event-Driven, Hexagonal Architecture (Ports & Adapters)</summary>
+<br>
 
+Layered Architecture:
 
+* Kurulumu ve öğrenmesi kolay.
 
+* Genellikle tek veritabanı ve tek deploy hattı olan küçük/orta ölçekli projelerde tercih edilir.
 
+* Katmanlar: Presentation, Business, Data Access.
 
+* Hiyerarşik yapı sunar.
 
+Clean Architecture:
 
+* Karmaşık iş kuralları ve değişken gereksinimler için uygundur.
+
+* Domain merkezde tutulur, dış bağımlılıklar port–adaptör mantığıyla ayrılır.
+
+* Test edilebilirlik ve bağımlılık yönetimi ön plandadır.
+
+ Hexagonal Architecture (Ports & Adapters):
+
+* Birden çok girdi/çıktı kanalı olan projelerde kullanılır.
+
+* Domain ile dış dünya arasına port’lar ve adaptör’lar konur.
+
+* Gevşek bağlılık sağlar.
+
+Mikroservisler:
+
+* Tek bir iş alanına odaklanan, bağımsız deploy edilebilen küçük servislerdir.
+
+* Kendi veritabanlarına sahiptirler.
+
+* Diğer servislerle API veya mesajlaşma ile haberleşir.
+
+* Karmaşık ve ölçeklenebilir sistemlerde ekiplerin bağımsız çalışmasını sağlar.
+
+ Event-Driven Architecture:
+
+* Servisler arası iletişim olaylar (events) üzerinden yürür.
+
+* Asenkron çalışır, loose coupling ile bağımlılık azaltılır.
+
+* Bir olay gerçekleştiğinde diğer servisler bunu dinleyerek tetiklenir.
 
 </details>
