@@ -2087,6 +2087,75 @@ Shape shape = ShapeFactory.CreateShape("Circle");
 shape.Draw();
 ```
 
+---
+
+
+* Desing Patern Açıklaması
+
+1. Singleton Pattern (Tekil Nesne Deseni)
+
+Amaç: Bir sınıfın sadece bir nesnesi olmasını ve bu nesneye global erişim noktası sağlamayı garanti eder.
+
+Kullanım: Konfigürasyon yöneticileri, loglama servisleri, veri tabanı bağlantıları.
+
+Örnek (C#):
+```
+public class Singleton
+{
+    private static Singleton _instance;
+    private Singleton() { }
+    public static Singleton Instance
+    {
+        get
+        {
+            if (_instance == null)
+                _instance = new Singleton();
+            return _instance;
+        }
+    }
+}
+
+```
+2. Factory Pattern (Fabrika Deseni)
+
+Amaç: Nesne oluşturma sürecini bir fabrikaya bırakarak, nesne türünü çalışma zamanında belirlemeyi sağlar.
+
+Kullanım: Nesne türleri değişken olduğunda, istemcinin nesne oluşturmayı bilmesine gerek yoktur.
+
+Örnek (C#):
+```
+public interface IShape
+{
+    void Draw();
+}
+
+public class Circle : IShape
+{
+    public void Draw() => Console.WriteLine("Circle çizildi");
+}
+
+public class Square : IShape
+{
+    public void Draw() => Console.WriteLine("Square çizildi");
+}
+
+public class ShapeFactory
+{
+    public IShape GetShape(string shapeType)
+    {
+        return shapeType.ToLower() switch
+        {
+            "circle" => new Circle(),
+            "square" => new Square(),
+            _ => null
+        };
+    }
+}
+```
+
+
+
+
 
  
 </details>
