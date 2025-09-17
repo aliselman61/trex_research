@@ -1714,7 +1714,7 @@ Dağıtık ve yüksek trafikli uygulamalarda Redis gibi bir önbellek sistemiyle
 | Trace           | Çok detaylı bilgi; genellikle hataları veya işlemleri adım adım izlemek için kullanılır    |
 | Debug           | Geliştiriciye yönelik bilgi; hata ayıklama ve sistem durumunu anlamak için kullanılır      |
 | Information     | Normal çalışma bilgileri; kullanıcı aktiviteleri ve sistem olayları kaydedilir             |
-| Warning         | Potansiyel sorunlar veya ileride hataya yol açabilecek durumlar hakkında uyarı verir        |
+| Warning         | Potansiyel sorunlar veya ileride hataya yol açabilecek durumlar hakkında uyarı verir       |
 | Error           | Hata oluştu; işlem tamamlanamadı veya beklenmedik bir durum meydana geldi                  |
 | Critical        | Kritik hata; sistemin çalışmasını veya uygulamanın devamını etkileyen durumları gösterir   |
 
@@ -1868,6 +1868,108 @@ app.UseExceptionHandler(a => a.Run(async ctx =>
 
 <summary>SOLID prensipleri: Her biri için kısa açıklama ve örnek</summary>
 
+1. Single Responsibility Principle (Tek Sorumluluk Prensibi)
+Bir sınıfın tek bir sorumluluğu olmalı.
 
- 
+```
+// Kötü örnek
+class UserService
+{
+    public void AddUser(string name) { /* kullanıcı ekle */ }
+    public void SendEmail(string email) { /* mail gönder */ } // farklı sorumluluk
+}
+
+// İyi örnek
+class UserService
+{
+    public void AddUser(string name) { /* kullanıcı ekle */ }
+}
+
+class EmailService
+{
+    public void SendEmail(string email) { /* mail gönder */ }
+}
+```
+
+2. Open/Closed Principle (Açık/Kapalı Prensibi)
+Sınıflar geliştirmeye açık, değişikliğe kapalı olmalı.
+
+```
+abstract class Discount
+{
+    public abstract double GetDiscount(double price);
+}
+
+class StudentDiscount : Discount
+{
+    public override double GetDiscount(double price) => price * 0.9;
+}
+
+class VIPDiscount : Discount
+{
+    public override double GetDiscount(double price) => price * 0.8;
+}
+```
+
+3. Liskov Substitution Principle (Liskov Yerine Geçme Prensibi)
+Türetilmiş sınıflar, temel sınıfların yerine sorunsuzca kullanılabilmeli.
+
+```
+class Bird
+{
+    public virtual void Fly() { }
+}
+
+class Sparrow : Bird
+{
+    public override void Fly() { /* uçar */ }
+}
+
+void MakeBirdFly(Bird bird)
+{
+    bird.Fly();
+}
+```
+
+4. Interface Segregation Principle (Arayüz Ayrımı Prensibi)
+Büyük bir arayüz yerine küçük ve amaca uygun arayüzler oluşturulmalı.
+
+```
+interface IWorkable
+{
+    void Work();
+}
+
+interface IEatable
+{
+    void Eat();
+}
+
+class Robot : IWorkable
+{
+    public void Work() { /* çalışır */ }
+}
+```
+
+5. Dependency Inversion Principle (Bağımlılığı Tersine Çevirme Prensibi)
+Yüksek seviye modüller, düşük seviye modüllere değil, soyutlamalara bağımlı olmalı.
+
+```
+interface ILogger
+{
+    void Log(string message);
+}
+
+class FileLogger : ILogger
+{
+    public void Log(string message) { /* dosyaya logla */ }
+}
+
+class App
+{
+    private readonly ILogger _logger;
+    public App(ILogger logger) { _logger = logger; }
+    public void Run() => _logger.Log("Çalışıyor");
+}
+```
 </details>
